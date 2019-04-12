@@ -1,10 +1,11 @@
 body {
-    background-color: darkgoldenrod;
+   /* background-color: darkgoldenrod; */
 }
 
 .navbar {
-    background-image: url('../../images/navbar/nav2.png');
+    background-image: url('../images/navbar/NAVBAR.png');
     background-size: 100% 100%;
+    min-height: 150px;
     font-variant: small-caps;
     font-size: 1.5em;
     font-family: monospace, 'courier new';
