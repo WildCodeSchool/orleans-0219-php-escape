@@ -50,8 +50,3 @@ nav img{
     vertical-align: middle;
 }
 
-@mediascreenand(max-width:990px){
-    .dropdown-item {
-        color: white;
-    }
-}
