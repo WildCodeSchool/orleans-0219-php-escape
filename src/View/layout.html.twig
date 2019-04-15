@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="/assets/css/navbar.css" />
 
     <title>{% block title %}{% endblock %}</title>
-    {% block navbar %}
-    {% endblock %}
 
     <link rel="stylesheet" href="/assets/css/style.css">
     {% block stylesheet %}{% endblock %}
@@ -22,6 +20,12 @@
 </head>
 
 <body>
+{% block navbar %}
+{% endblock %}
+<header>
+    {% block header %}
+    {% endblock header %}
+</header>
 
 {% block content %}{% endblock %}
 {% block javascript %}{% endblock %}
