@@ -6,7 +6,9 @@ body {
 
 /*- ====================== HEADER ========================= -*/
 
-header {
+/*- ================= TITRE ==================== -*/
+
+.header {
     background-image: url('../images/background/sign2.png');
     background-size: 100% 100%;
     height: 18em;
@@ -20,7 +22,7 @@ header {
     margin-right:auto;
 }
 
-header h1 {
+.header h1 {
     font-size: 3em;
     font-variant: small-caps;
     vertical-align: middle;
@@ -28,11 +30,11 @@ header h1 {
     text-shadow: 1px 1px #fae6c6, -1px -1px #5f533b;
 }
 
-h1 .bigfont {
+.header h1 .bigfont {
     font-size: 1.5em;
 }
 
-header h2 {
+.header h2 {
     font-size: 1.8em;
     font-variant: small-caps;
     padding-top: 3.2em;
@@ -46,4 +48,58 @@ header h2 {
     margin-bottom: 1.2em;
 }
 
+/*- ================= TITRE ==================== -*/
+
+/*- ============== TRIPADVISOR ================= -*/
+
+.tripadvisor {
+    color: white;
+    margin-top: 2em;
+}
+
+.tripadvisor .note {
+    width: 4em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+.tripadvisor h5 {
+    font-family: monospace, 'courier new';
+    font-style: italic;
+}
+
+.tripadvisor .col-4 {
+    text-align: center;
+}
+
+.tripadvisor .col-8 {
+    text-align: center;
+}
+
+.tripadvisorlogo {
+    width: 15em;
+    height: 10em;
+    vertical-align: middle;
+    margin-left: 65%;
+}
+
+/*- ============== TRIPADVISOR ================= -*/
+
+/*- ============ BOUTON MISSIONS =============== -*/
+/*- ============ BOUTON MISSIONS =============== -*/
+
+
 /*- ====================== HEADER ========================= -*/
+
+/*- ======================== BODY ========================= -*/
+
+/*- ============== ATOUTS ================= -*/
+/*- ============== ATOUTS ================= -*/
+
+/*- ================ NEWS ================= -*/
+/*- ================ NEWS ================= -*/
+
+/*- ============== FOOTER ================= -*/
+/*- =============== FOOTER================= -*/
+
+/*- ======================= BODY ========================= -*/

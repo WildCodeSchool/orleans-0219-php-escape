@@ -20,11 +20,16 @@
 </head>
 
 <body>
-{% block navbar %}
-{% endblock %}
+
 <header>
+    {% block navbar %}
+    {% endblock navbar %}
+
     {% block header %}
     {% endblock header %}
+
+    {% block tripadvisor %}
+    {% endblock tripadvisor %}
 </header>
 
 {% block content %}{% endblock %}
