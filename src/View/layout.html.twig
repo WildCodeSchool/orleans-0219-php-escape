@@ -13,15 +13,18 @@
     <link rel="stylesheet" href="/assets/css/navbar.css" />
 
     <title>{% block title %}{% endblock %}</title>
-    {% block navbar %}
-    {% endblock %}
 
     <link rel="stylesheet" href="/assets/css/style.css">
     {% block stylesheet %}{% endblock %}
-    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="icon" href="/assets/images/navbar/logoprojet2.png">
 </head>
 
 <body>
+<header>
+    {% block navbar %}
+    {% endblock %}
+
+</header>
 
 {% block content %}{% endblock %}
 {% block javascript %}{% endblock %}
