@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "boycott";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/assets/images/BOYCOTT_.TTF");
+
+}
+@font-face {
+    font-family: "atype";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/assets/images/ATypewriterForMe.ttf");
+
+}
+.card {
+    min-width: 310px;
+    max-width: 310px;
+    min-height: 420px;
+}
+.card-title {
+    color: #164e1e;
+    position: relative;
+}
+.card {
+    position: relative;
+    background-image: url("/assets/images/295a135aaa6be7e4debb5b8f816a46d5.jpg");
+    border-radius: 10px;
+    z-index: 1;
+    transition: 0.25s ease-in-out;
+
+}
+.card-title {
+    font-size: xx-large;
+    color: azure;
+    padding-top: 120px;
+}
+.card-text {
+    font-family: "boycott";
+    font-size: xx-large;
+    color: white;
+}
+.container-fluid {
+    height: 150px;
+}
+.enhover {
+    position: absolute;
+    z-index: 0;
+    min-width: 300px;
+    min-height: 340px;
+    left: 5px;
+    top: 35px;
+    opacity: 0;
+    color: azure;
+    transition: 0.5s ease;
+    font-family: "atype";
+    font-weight: bold;
+
+}
+.card:hover .enhover {
+opacity: 100;
+
+}
+.card:hover .doliprane {
+opacity: 0;
+}
+.doliprane {
+    transition: 0.5s ease;
+    opacity: 100;
+}
+.card:hover {
+    transform: scale(1.1);
+}
