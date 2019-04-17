@@ -10,27 +10,28 @@
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/assets/css/navbar.css" />
 
     <title>{% block title %}{% endblock %}</title>
 
     <link rel="stylesheet" href="/assets/css/style.css">
     {% block stylesheet %}{% endblock %}
-    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="icon" href="assets/images/navbar/logoprojet2.png">
 </head>
 
 <body>
+<div class="container-fluid">
 
 <header>
+
     {% block navbar %}
     {% endblock navbar %}
 
     {% block header %}
     {% endblock header %}
 
-    {% block tripadvisor %}
-    {% endblock tripadvisor %}
 </header>
+
+</div>
 
 {% block content %}{% endblock %}
 {% block javascript %}{% endblock %}
