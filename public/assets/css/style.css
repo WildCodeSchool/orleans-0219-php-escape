@@ -1,3 +1,5 @@
+
+/* ATOUTS */
 @font-face {
     font-family: "boycott";
     font-style: normal;
@@ -69,4 +71,52 @@ opacity: 0;
 }
 .card:hover {
     transform: scale(1.1);
+}
+/*FOOTER*/
+
+footer {
+    padding-top: 6em;
+    padding-left: 5em;
+    padding-right: 5em;
+    background-image: url("../images/footer/footer.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+footer p {
+    color : white;
+    font-family: monospace, 'Courier New';
+    font-size: 1.5em;
+}
+
+.footer-center img{
+    max-width: 5vw;
+}
+
+footer .row {
+    min-width: 100%;
+}
+
+footer p a {
+    color: goldenrod;
+    transition: ease 0.2s;
+}
+
+footer p a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.title-footer {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.footer-center img {
+    filter: grayscale(1);
+    transition: ease 0.2s;
+}
+
+.footer-center img:hover {
+    filter: grayscale(0);
 }
