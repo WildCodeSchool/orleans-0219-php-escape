@@ -117,3 +117,49 @@ nav img{
 }
 
 /*======================= NAVBAR =====================*/
+
+/*======================= NEWS =======================*/
+
+.card {
+    background-color: rgba(255, 255, 255, 0.47);
+    border-radius: 10px;
+    color: #bbbbbb;
+    box-shadow: 5px 4px 9px -3px rgba(0,0,0,0.41);
+}
+
+.card-header {
+    font-variant: small-caps;
+}
+
+.card-body {
+    max-height: 10em;
+    overflow: auto;
+    font-size: 1em;
+    font-family: monospace, 'courier new';
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255);
+    color: #000;
+}
+
+.btn-news {
+    background-color: darkgoldenrod;
+    margin-bottom: 1em;
+    box-shadow: 5px 4px 9px -3px rgba(0,0,0,0.41);
+}
+
+@media screen and (max-width: 768px) {
+    .card-body {
+        padding: 0;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card-body {
+        padding: 1;
+    }
+}
+
+/*======================= NEWS =======================*/
