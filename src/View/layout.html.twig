@@ -10,19 +10,24 @@
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/images/navbar/logoprojet2.png">
 
     <title>{% block title %}{% endblock %}</title>
 
     {% block stylesheet %}{% endblock %}
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="icon" href="/assets/images/navbar/logoprojet2.png">
-    <link rel="icon" href="/assets/images/favicon.png">
+
 </head>
 
 <body>
 <header>
     {% block navbar %}
-    {% endblock %}
+    {% endblock navbar %}
+
+    <div class="container-fluid">
+        {% block header %}
+        {% endblock header %}
+    </div>
 </header>
 
 {% block content %}{% endblock %}
