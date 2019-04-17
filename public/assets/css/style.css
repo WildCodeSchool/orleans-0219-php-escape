@@ -2,14 +2,14 @@
     font-family: "boycott";
     font-style: normal;
     font-weight: normal;
-    src: url("/assets/images/BOYCOTT_.TTF");
+    src: url("/assets/fonts/BOYCOTT_.TTF");
 
 }
 @font-face {
     font-family: "atype";
     font-style: normal;
     font-weight: normal;
-    src: url("/assets/images/ATypewriterForMe.ttf");
+    src: url("/assets/fonts/ATypewriterForMe.ttf");
 
 }
 .card {
