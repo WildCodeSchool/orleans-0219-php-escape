@@ -1,7 +1,7 @@
 /*- ======================== BODY ========================= -*/
 
 body {
-    /*background-image: url('../images/background/91284.svg'); => IMAGE A VENIR <= */
+    /*background-image: url('../images/background/'); => IMAGE A VENIR <= */
     background-color: #201004;
     scroll-behavior: smooth;
 }
@@ -16,9 +16,11 @@ body {
 
 .header {
     background-image: url('../images/background/sign2.png');
-    background-size: 100% 100%;
-    height: 17.5em;
-    width: 40em;
+    background-size: contain;
+    height: 50vh;
+    width: 80vw;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     margin-top: 3.3em;
     font-family: monospace, 'courier new';
@@ -29,7 +31,8 @@ body {
 }
 
 .header h1 {
-    font-size: 3em;
+    padding-top:28vh;
+    font-size: 5vh;
     font-variant: small-caps;
     vertical-align: middle;
     color: #201004;
@@ -41,10 +44,14 @@ body {
     margin-top: 0;
 }
 
-.header h2 {
-    font-size: 1.8em;
+.title h2 {
+    text-align: center;
     font-variant: small-caps;
-    padding-top: 3em;
+    font-family: monospace, 'courier new';
+    color: white;
+    font-size: 6vw;
+    font-variant: small-caps;
+    padding-top: 2vh;
 }
 
 .logo {
@@ -53,52 +60,6 @@ body {
     vertical-align: middle;
     margin-left: 0.2em;
     margin-bottom: 1.2em;
-}
-
-@media only screen and (max-width: 768px) {
-    .header {
-        margin-top: 4.5em;
-        height: 18em;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .header {
-        background-image: url('../images/background/woodsignphone.png');
-        background-size: 100% 100%;
-        height: 15em;
-        width: 90%;
-        max-width: 375px;
-    }
-
-
-    .woodSign {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .header h1 {
-        font-size: 2em;
-        font-variant: small-caps;
-        vertical-align: middle;
-        color: #201004;
-        padding-top: 4.3em;
-        text-shadow: 1px 1px #fae6c6, -1px -1px #5f533b;
-    }
-
-    .header h1 .bigfont {
-        font-size: 1.5em;
-        margin-top: 0;
-    }
-
-    .header h2 {
-        font-size: 1.5em;
-        padding-top: 0;
-    }
-
-    .logo {
-        display: none;
-    }
 }
 
 /*- ================= TITRE ==================== -*/
@@ -121,11 +82,11 @@ body {
     font-style: italic;
 }
 
-.tripadvisor .col-4 {
+.tripadvisor .col-sm-4 {
     text-align: center;
 }
 
-.tripadvisor .col-8 {
+.tripadvisor .col-sm-8 {
     text-align: center;
 }
 
@@ -133,43 +94,7 @@ body {
     width: 14em;
     height: 10em;
     vertical-align: middle;
-    margin-left: 65%;
-}
-
-@media only screen and (max-width: 768px) {
-    .tripadvisorlogo {
-        margin-left: 1.5em;
-    }
-
-    .tripadvisor .row {
-        margin-top: 3em;
-        margin-bottom: 2em;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .tripadvisor [class*="col-"] {
-        width: 100%;
-        text-align: center;
-        max-width: 375px;
-        padding-right: 0;
-    }
-
-    .tripadvisorlogo {
-        width: 12em;
-        height: 8.5em;
-        margin-bottom: 1.5em;
-        margin-left: 0;
-    }
-
-    .tripadvisor .media-body {
-        font-size: 0.8em;
-    }
-
-    .tripadvisor .row {
-        text-align: center;
-        display: inline-block;
-    }
+    margin-left: 15%;
 }
 
 /*- ============== TRIPADVISOR ================= -*/
@@ -177,7 +102,7 @@ body {
 /*- ============ BOUTON MISSIONS =============== -*/
 
 .buttonmissions {
-    background-image: url("../images/background/fond2.png");
+    background-image: url("../images/background/backButton.png");
     background-size: 100% 100%;
     width: 20em;
     height: 20em;
@@ -197,7 +122,6 @@ body {
     text-decoration: none;
     color: #201004;
 
-    -webkit-animation: a 400ms infinite alternate;
     animation: a 400ms infinite alternate;
 }
 
