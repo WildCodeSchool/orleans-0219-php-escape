@@ -11,16 +11,18 @@
             crossorigin="anonymous"
     />
 
-    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-    {% block stylesheet %}{% endblock %}
-    <link rel="icon" href="assets/images/navbar/logoprojet2.png">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="icon" href="/assets/images/favicon.png">
+
 </head>
 
 <body>
-<div class="container-fluid">
 
+<div class="container-fluid">
 <header>
 
     {% block navbar %}
@@ -31,10 +33,17 @@
 
 </header>
 
+{% block assets %}
+{% endblock assets %}
+
+{% block news %}
+{% endblock news %}
+
 </div>
 
-{% block content %}{% endblock %}
-{% block javascript %}{% endblock %}
+{% block footer %}
+{% endblock footer %}
+
 <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -50,6 +59,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"
 ></script>
+
+{% block javascript %}{% endblock %}
 </body>
 </html>
 
