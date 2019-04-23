@@ -149,17 +149,4 @@ nav img{
     box-shadow: 5px 4px 9px -3px rgba(0,0,0,0.41);
 }
 
-@media screen and (max-width: 768px) {
-    .card-body {
-        padding: 0;
-        text-align: left;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .card-body {
-        padding: 1;
-    }
-}
-
 /*======================= NEWS =======================*/
