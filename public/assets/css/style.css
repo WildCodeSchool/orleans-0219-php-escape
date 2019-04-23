@@ -1,3 +1,4 @@
+
 /*======================= NAVBAR =====================*/
 
 .navbar {
@@ -11,6 +12,7 @@
     top: 0; /* Position the navbar at the top of the page */
     width: 100%;
     margin-left: 0;
+    padding-left: 0;
 }
 
 .titles {
@@ -119,3 +121,131 @@ nav img{
 }
 
 /*======================= NAVBAR =====================*/
+
+/* ATOUTS */
+
+@font-face {
+    font-family: "boycott";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/assets/fonts/BOYCOTT_.TTF");
+}
+
+@font-face {
+    font-family: "atype";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/assets/fonts/ATypewriterForMe.ttf");
+}
+
+.card {
+    min-width: 310px;
+    max-width: 310px;
+    min-height: 420px;
+}
+.card-title {
+    color: #164e1e;
+    position: relative;
+}
+.card {
+    position: relative;
+    background-image: url("/assets/images/295a135aaa6be7e4debb5b8f816a46d5.jpg");
+    border-radius: 10px;
+    z-index: 1;
+    transition: 0.25s ease-in-out;
+
+}
+.card-title {
+    font-size: xx-large;
+    color: azure;
+    padding-top: 120px;
+}
+.card-text {
+    font-family: "boycott";
+    font-size: xx-large;
+    color: white;
+}
+.container-fluid {
+    height: 150px;
+}
+.enhover {
+    position: absolute;
+    z-index: 0;
+    min-width: 300px;
+    min-height: 340px;
+    left: 5px;
+    top: 35px;
+    opacity: 0;
+    color: azure;
+    transition: 0.5s ease;
+    font-family: "atype";
+    font-weight: bold;
+}
+
+.card:hover .enhover {
+opacity: 100;
+}
+
+.card:hover .doliprane {
+opacity: 0;
+}
+
+.doliprane {
+    transition: 0.5s ease;
+    opacity: 100;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/*FOOTER*/
+
+footer {
+    padding-top: 6em;
+    padding-left: 5em;
+    padding-right: 5em;
+    background-image: url("../images/footer/footer.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+footer p {
+    color : white;
+    font-family: monospace, 'Courier New';
+    font-size: 1.5em;
+}
+
+.footer-center img{
+    max-width: 5vw;
+}
+
+footer .row {
+    min-width: 100%;
+}
+
+footer p a {
+    color: goldenrod;
+    transition: ease 0.2s;
+}
+
+footer p a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.title-footer {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.footer-center img {
+    filter: grayscale(1);
+    transition: ease 0.2s;
+}
+
+.footer-center img:hover {
+    filter: grayscale(0);
+}
+
+/*FOOTER*/
