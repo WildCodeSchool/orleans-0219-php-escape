@@ -70,7 +70,9 @@ nav img{
     margin-top: 1.5em;
 }
 
-@media screen and (max-width: 768px) {
+ /* ----- Elles sont necessaires pour l'instant -------> */
+
+@media screen and (max-width: 837px) {
     .navbar img {
         margin-top: 1.1em;
     }
@@ -80,7 +82,7 @@ nav img{
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 575px) {
     .navbar {
         max-height: 70px;
         padding: 0;
