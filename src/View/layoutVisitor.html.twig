@@ -1,9 +1,18 @@
 {% extends 'layout.html.twig' %}
 
 {% block navbar %}
-    {% include '/Home/_navbar.html.twig' %}
+
+{% endblock navbar%}
+
+{% block header %}
+    {% include '/Home/header.html.twig' %}
+{% endblock %}
+
+{% block assets %}
+    {% include '/Home/assets.html.twig' %}
 {% endblock %}
 
 {% block footer %}
     {% include 'Home/_footer.html.twig' %}
 {% endblock %}
+
