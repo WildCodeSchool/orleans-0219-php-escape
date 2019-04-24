@@ -1,3 +1,6 @@
+section {
+    margin-top: 1em;
+}
 
 /*======================= NAVBAR =====================*/
 
@@ -46,6 +49,7 @@
 .dropdown-item::before {
     content: "|";
 }
+
 .dropdown-item{
     color: darkgreen;
     padding-left: 1em;
@@ -143,34 +147,35 @@ nav img{
     max-width: 310px;
     min-height: 420px;
 }
+
 .card-title {
     color: #164e1e;
-    position: relative;
 }
+
 .card {
-    position: relative;
     background-image: url("/assets/images/295a135aaa6be7e4debb5b8f816a46d5.jpg");
     border-radius: 10px;
-    z-index: 1;
     transition: 0.25s ease-in-out;
-
 }
+
 .card-title {
     font-size: xx-large;
     color: azure;
     padding-top: 120px;
 }
+
 .card-text {
     font-family: "boycott";
     font-size: xx-large;
     color: white;
 }
+
 .container-fluid {
     height: 150px;
 }
+
 .enhover {
     position: absolute;
-    z-index: 0;
     min-width: 300px;
     min-height: 340px;
     left: 5px;
@@ -183,11 +188,11 @@ nav img{
 }
 
 .card:hover .enhover {
-opacity: 100;
+    opacity: 100;
 }
 
 .card:hover .doliprane {
-opacity: 0;
+    opacity: 0;
 }
 
 .doliprane {
