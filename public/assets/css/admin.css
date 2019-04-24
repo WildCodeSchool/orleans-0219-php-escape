@@ -4,8 +4,10 @@
     top: 0;
     left: 0;
     height: 100vh;
-    background: #7386D5;
+    background: #00A84F;
     color: #fff;
+    box-shadow: 3px 0 15px 0 #656565;
+    font-family: 'Roboto', sans-serif;
 }
 
 .sidebar img {
@@ -24,14 +26,26 @@
     color: white;
 }
 
+.sidebar ul {
+    margin-top: 30vh;
+}
+
 .sidebar li {
     padding-top: 1em;
     padding-bottom: 1em;
-    padding-left: 1em;
-    left: 0;
+    text-align: center;
     transition: ease 0.2s;
+    font-size: 2em;
 }
 
 .sidebar li:hover {
     background-color: #96A7FF;
+}
+
+.bottom-nav {
+    bottom: 0;
+    font-size: 12px;
+    margin-bottom: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
