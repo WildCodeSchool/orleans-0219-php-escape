@@ -12,32 +12,25 @@
     />
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/navbar.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
 
     <title>{% block title %}{% endblock %}</title>
-    <link rel="icon" href="/assets/images/favicon.png">
 
 </head>
 
 <body>
 
-<div class="container-fluid">
 <header>
-
-    {% block navbar %}
-    {% endblock navbar %}
 
     {% block header %}
     {% endblock header %}
 
 </header>
 
-{% block assets %}
-{% endblock assets %}
+<div class="container-fluid">
 
-{% block news %}
-{% endblock news %}
+{% block content %}
+{% endblock content %}
 
 </div>
 
