@@ -1,23 +1,23 @@
 <div class="row">
     <div class="col-6">
-        <div class="card">
+        <div class="text-center">
             <table class="table table-hover">
                 <thead>
                 <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">mission</th>
-                    <th scope="col">niveau</th>
-                    <th scope="col">nombre de joueurs</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Mission</th>
+                    <th scope="col">Niveau</th>
+                    <th scope="col">Nombre de joueurs</th>
                 </tr>
                 </thead>
                 <tbody>
                 {% for mission in missions %}
-                <tr>
-                    <td><a>{{ mission.id }}</a></td>
-                    <td><a>{{ mission.title }}</a></td>
-                    <td><a>{{ mission.level }}</a></td>
-                    <td><a>{{ mission.players }}</a></td>
-                </tr>
+                    <tr>
+                        <td>{{ mission.id }}</td>
+                        <td><a href="">{{ mission.title }}</a></td>
+                        <td>{{ mission.level }}</td>
+                        <td>{{ mission.players }}</td>
+                    </tr>
                 {% endfor %}
                 </tbody>
             </table>
