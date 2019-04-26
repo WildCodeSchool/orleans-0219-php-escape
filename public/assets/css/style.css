@@ -5,6 +5,10 @@ body {
     scroll-behavior: smooth;
 }
 
+h2 {
+    font-family: "courier new";
+}
+
 /*---------------------------------- header ----------------------------*/
 /*------------------- NAVBAR -------------------*/
 
@@ -274,16 +278,17 @@ nav img{
     src: url("/assets/fonts/ATypewriterForMe.ttf");
 
 }
-.card {
+
+#assets .card {
     min-width: 310px;
     max-width: 310px;
     min-height: 420px;
 }
-.card-title {
+#assets .card-title {
     color: #164e1e;
     position: relative;
 }
-.card {
+#assets .card {
     position: relative;
     background-image: url("/assets/images/295a135aaa6be7e4debb5b8f816a46d5.jpg");
     border-radius: 10px;
@@ -291,12 +296,12 @@ nav img{
     transition: 0.25s ease-in-out;
 
 }
-.card-title {
+#assets .card-title {
     font-size: xx-large;
     color: azure;
     padding-top: 120px;
 }
-.card-text {
+#assets .card-text {
     font-family: "boycott";
     font-size: xx-large;
     color: white;
@@ -304,7 +309,7 @@ nav img{
 .container-fluid {
     height: 150px;
 }
-.enhover {
+#assets .enhover {
     position: absolute;
     z-index: 0;
     min-width: 300px;
@@ -318,18 +323,18 @@ nav img{
     font-weight: bold;
 
 }
-.card:hover .enhover {
+#assets .card:hover .enhover {
 opacity: 100;
 
 }
-.card:hover .doliprane {
+#assets .card:hover .doliprane {
 opacity: 0;
 }
-.doliprane {
+#assets .doliprane {
     transition: 0.5s ease;
     opacity: 100;
 }
-.card:hover {
+#assets .card:hover {
     transform: scale(1.1);
 }
 
