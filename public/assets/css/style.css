@@ -1,3 +1,11 @@
+/*- ======================== BODY ========================= -*/
+
+body {
+    /*background-image: url('../images/background/'); => IMAGE A VENIR <= */
+    background-color: #201004;
+    scroll-behavior: smooth;
+}
+
 /*---------------------------------- header ----------------------------*/
 /*------------------- NAVBAR -------------------*/
 
