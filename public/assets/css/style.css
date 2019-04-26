@@ -1,7 +1,6 @@
 /*- ======================== BODY ========================= -*/
 
 body {
-    /*background-image: url('../images/background/'); => IMAGE A VENIR <= */
     background-color: #201004;
     scroll-behavior: smooth;
 }
@@ -222,7 +221,7 @@ nav img{
 /*- ============ BOUTON MISSIONS =============== -*/
 
 .buttonmissions {
-    background-image: url("../images/background/backButton.png");
+    background-image: url("../images/background/backButton.webp");
     background-size: 100% 100%;
     width: 20em;
     height: 20em;
