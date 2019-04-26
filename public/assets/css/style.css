@@ -1,4 +1,6 @@
+/*---------------------------------- header ----------------------------*/
 /*------------------- NAVBAR -------------------*/
+
 
 .navbar {
     background-image: url('../images/navbar/NavbarBg.png');
@@ -122,6 +124,133 @@ nav img{
 }
 
 /*------------------- NAVBAR -------------------*/
+/*- ================= TITRE ==================== -*/
+
+.header {
+    background-image: url('../images/background/sign2.png');
+    background-size: contain;
+    height: 50vh;
+    width: 80vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 3.3em;
+    font-family: monospace, 'courier new';
+    color: white;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.header h1 {
+    padding-top:28vh;
+    font-size: 5vh;
+    font-variant: small-caps;
+    vertical-align: middle;
+    color: #201004;
+    text-shadow: 1px 1px #fae6c6, -1px -1px #5f533b;
+}
+
+.header h1 .bigfont {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.title h2 {
+    text-align: center;
+    font-variant: small-caps;
+    font-family: monospace, 'courier new';
+    color: white;
+    font-size: 6vw;
+    font-variant: small-caps;
+    padding-top: 2vh;
+}
+
+.logo {
+    width: 1.7em;
+    height: 1.7em;
+    vertical-align: middle;
+    margin-left: 0.2em;
+    margin-bottom: 1.2em;
+}
+
+/*- ================= TITRE ==================== -*/
+
+/*- ============== TRIPADVISOR ================= -*/
+
+.tripadvisor {
+    color: white;
+    margin-top: 2em;
+}
+
+.tripadvisor .note {
+    width: 4em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+.tripadvisor h5 {
+    font-family: monospace, 'courier new';
+    font-style: italic;
+}
+
+.tripadvisor .col-sm-4 {
+    text-align: center;
+}
+
+.tripadvisor .col-sm-8 {
+    text-align: center;
+}
+
+.tripadvisorlogo {
+    width: 14em;
+    height: 10em;
+    vertical-align: middle;
+    margin-left: 15%;
+}
+
+/*- ============== TRIPADVISOR ================= -*/
+
+/*- ============ BOUTON MISSIONS =============== -*/
+
+.buttonmissions {
+    background-image: url("../images/background/backButton.png");
+    background-size: 100% 100%;
+    width: 20em;
+    height: 20em;
+}
+
+.buttonmissions h3 {
+    font-size: 2.1em;
+    text-shadow: 1px 1px #fae6c6, -1px -1px #5f533b;
+    font-family: monospace, 'courier new';
+    font-variant: small-caps;
+    transform: rotate(-9deg);
+    padding-top: 3.1em;
+    padding-left: 2.3em;
+}
+
+.buttonmissions a {
+    text-decoration: none;
+    color: #201004;
+
+    animation: a 400ms infinite alternate;
+}
+
+@-webkit-keyframes a {
+    0% { text-shadow: 1px 1px #fae6c6, -1px -1px #5f533b; }
+    100% { text-shadow: 1px 1px #fa2e2d, -1px -1px #5f533b; }
+}
+
+.buttonmissions a:hover {
+    text-shadow: 1px 1px #fa2e2d, -1px -1px #5f533b;
+    animation: none;
+}
+
+/*- ============ BOUTON MISSIONS =============== -*/
+
+/*---------------------------------- header ----------------------------*/
+
 
 /* ATOUTS */
 @font-face {
