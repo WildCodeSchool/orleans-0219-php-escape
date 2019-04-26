@@ -1,51 +1,8 @@
-.sidebar {
-    width: 25em;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    background: #00A84F;
-    color: #fff;
-    box-shadow: 3px 0 15px 0 #656565;
-    font-family: 'Roboto', sans-serif;
+.navbar {
+    background-image: none;
+    background-color: darkgreen;
 }
 
-.sidebar img {
-    top: 2em;
-    left: 1em;
-    position: absolute;
-}
-
-.sidebar h1 {
-    padding-left: 2em;
-    padding-top: 1em;
-}
-
-.sidebar a {
-    text-decoration: none;
-    color: white;
-}
-
-.sidebar ul {
-    margin-top: 30vh;
-}
-
-.sidebar li {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: center;
-    transition: ease 0.2s;
-    font-size: 2em;
-}
-
-.sidebar li:hover {
-    background-color: #96A7FF;
-}
-
-.bottom-nav {
-    bottom: 0;
-    font-size: 12px;
-    margin-bottom: 0;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+.nav-link {
+    font-size: 1em;
 }
