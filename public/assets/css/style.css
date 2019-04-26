@@ -375,6 +375,9 @@ footer {
     background-image: url("../images/footer/footer.png");
     background-position: bottom;
     background-repeat: no-repeat;
+    margin-left: 0;
+    margin-right: 0;
+
 }
 
 footer p {
