@@ -436,3 +436,6 @@ footer p a:hover {
 #price td, th, .join {
     color: black;
 }
+#price .height {
+    height: 400px;
+}
