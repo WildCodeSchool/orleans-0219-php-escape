@@ -13,9 +13,7 @@ h2 {
     font-family: "courier new";
 }
 
-/*---------------------------------- header ----------------------------*/
 /*------------------- NAVBAR -------------------*/
-
 
 #navbar .navbar {
     background-image: url('../images/navbar/NavbarBg.png');
@@ -24,8 +22,8 @@ h2 {
     font-variant: small-caps;
     font-size: 1.5em;
     font-family: monospace, 'courier new';
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    position: fixed;
+    top: 0;
     width: 100%;
     margin-left: 0;
     padding-left: 0;
@@ -134,7 +132,6 @@ nav img{
     }
 }
 
-/*------------------- NAVBAR -------------------*/
 /*- ================= TITRE ==================== -*/
 
 #title {
@@ -185,8 +182,6 @@ nav img{
     margin-bottom: 1.2em;
 }
 
-/*- ================= TITRE ==================== -*/
-
 /*- ============== TRIPADVISOR ================= -*/
 
 #tripadvisor {
@@ -223,8 +218,6 @@ nav img{
     height: 10em;
     vertical-align: middle;
 }
-
-/*- ============== TRIPADVISOR ================= -*/
 
 /*- ============ BOUTON MISSIONS =============== -*/
 
@@ -264,11 +257,6 @@ nav img{
     text-shadow: 1px 1px #fa2e2d, -1px -1px #5f533b;
     animation: none;
 }
-
-/*- ============ BOUTON MISSIONS =============== -*/
-
-/*---------------------------------- header ----------------------------*/
-
 
 /* ATOUTS */
 @font-face {
@@ -312,9 +300,6 @@ nav img{
     font-family: "boycott";
     font-size: xx-large;
     color: white;
-}
-.container-fluid {
-    height: 150px;
 }
 #assets .enhover {
     position: absolute;
@@ -381,34 +366,24 @@ opacity: 0;
     box-shadow: 5px 4px 9px -3px rgba(0,0,0,0.41);
 }
 
-/*======================= NEWS =======================*/
-
 /*FOOTER*/
 
 footer {
-    padding-top: 6em;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding: 3em 5em 0 5em;
     background-image: url("../images/footer/footer.png");
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
-    margin-left: 0;
-    margin-right: 0;
-
+    max-height: 350px;
 }
 
 footer p {
     color : white;
     font-family: monospace, 'Courier New';
-    font-size: 1.5em;
+    font-size: 1.5vw;
 }
 
 .footer-center img{
     max-width: 5vw;
-}
-
-footer .row {
-    min-width: 100%;
 }
 
 footer p a {
@@ -434,6 +409,7 @@ footer p a:hover {
 .footer-center img:hover {
     filter: grayscale(0);
 }
+
 .space {
     margin-top: 13em;
     margin-bottom: 6em;
