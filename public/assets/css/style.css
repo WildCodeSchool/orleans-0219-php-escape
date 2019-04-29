@@ -285,7 +285,7 @@ nav img{
 }
 #assets .card {
     position: relative;
-    background-image: url("/assets/images/background-wood-board-parquet.jpg");
+    background-image: url("/assets/images/background-wood-board-parquet.webp");
     border-radius: 10px;
     z-index: 1;
     transition: 0.25s ease-in-out;
@@ -426,10 +426,10 @@ footer p a:hover {
 }
 
 #price table {
-    background-image: url("/assets/images/background-wood-board-parquet.jpg");
+    background-image: url("/assets/images/background-wood-board-parquet.webp");
 }
 #price .btnmission {
-    background-image: url("/assets/images/background-wood-board-parquet.jpg");
+    background-image: url("/assets/images/background-wood-board-parquet.webp");
     height: 250px;
 }
 
