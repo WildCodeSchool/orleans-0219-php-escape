@@ -145,12 +145,12 @@ nav img{
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    margin-top: 3.3em;
     font-family: monospace, 'courier new';
     color: white;
     justify-content: center;
     margin-left:auto;
     margin-right:auto;
+    top: 50px;
 }
 
 .header h1 {
@@ -306,8 +306,7 @@ nav img{
     font-size: xx-large;
     color: white;
 }
-.container-fluid {
-    height: 150px;
+.hg {
 }
 #assets .enhover {
     position: absolute;
@@ -380,8 +379,7 @@ footer {
     background-image: url("../images/footer/footer.png");
     background-position: bottom;
     background-repeat: no-repeat;
-    margin-left: 0;
-    margin-right: 0;
+
 
 }
 
@@ -422,3 +420,4 @@ footer p a:hover {
 .footer-center img:hover {
     filter: grayscale(0);
 }
+
