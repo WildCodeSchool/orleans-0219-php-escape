@@ -75,21 +75,20 @@ opacity: 0;
 /*FOOTER*/
 
 footer {
-    padding-top: 6em;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding: 1.5em 5em 1.5em 5em;
     background-image: url("../images/footer/footer.png");
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
+    max-height: 350px;
 }
 
 footer p {
     color : white;
     font-family: monospace, 'Courier New';
-    font-size: 1.5em;
+    font-size: 1.5vw;
 }
 
-.footer-center img{
+.footer-center img {
     max-width: 5vw;
 }
 
@@ -119,4 +118,12 @@ footer p a:hover {
 
 .footer-center img:hover {
     filter: grayscale(0);
+}
+
+footer .col-4 {
+    margin-top: auto;
+}
+
+footer p {
+    margin-bottom: 0;
 }
