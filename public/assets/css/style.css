@@ -1,6 +1,10 @@
 /*- ======================== BODY ========================= -*/
 
 body {
+    background-image: url("https://image.freepik.com/free-vector/exotic-pattern-with-tropical-leaves-dark-forest_43605-2958.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: #201004;
     scroll-behavior: smooth;
 }
@@ -188,6 +192,9 @@ nav img{
 #tripadvisor {
     color: white;
     margin-top: 10vw;
+    background-color: rgba(32, 16, 4, 0.47);
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #tripadvisor .note {
