@@ -282,16 +282,31 @@ footer p a:hover {
 /*======================= FAQ =======================*/
 
 
-.card-1
+
+
+#faq .card-1
 {
     background-color: #F0E48F;
 }
 
-.card-header
+#faq .card-header
 {
     background-color: #578F46;
     font-color: black;
 }
 
+#faq
+{
+    margin-top: 15em;
+}
 
+#carte
+{
+    margin-top: 4em;
+}
+
+#adress
+{
+    font-size: 1.5em;
+}
 /*======================= END FAQ =======================*/
