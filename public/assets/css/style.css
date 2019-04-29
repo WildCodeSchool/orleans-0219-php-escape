@@ -430,5 +430,16 @@ footer p a:hover {
     filter: grayscale(0);
 }
 .space {
-    margin-top: 8em;
+    margin-top: 13em;
+    margin-bottom: 6em;
+}
+
+/* PAGE PRICE */
+
+#price h2, #price h3,td,th, .student {
+    color: white;
+    font-family: "courier new";
+}
+#price .student {
+    font-style: italic;
 }

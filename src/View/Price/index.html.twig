@@ -1,19 +1,20 @@
 {% extends '/layoutVisitor.html.twig' %}
 
 {% block content %}
+    <section id="price">
     <div class="container space">
         <h2 class="text-center">Tarifs</h2>
         <nav>
             <div class="nav nav-tabs justify-content-center my-3" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active navbutton px-5 " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> Heures Creuses</a>
-                <a class="nav-item nav-link navbutton px-5" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> Heures Pleines</a>
-                <a class="nav-item nav-link navbutton px-5" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="far fa-star"></i> Nautillus </a>
+                <a class="nav-item nav-link active navbutton px-5 text-muted" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> Heures Creuses</a>
+                <a class="nav-item nav-link navbutton px-5 text-muted" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> Heures Pleines</a>
+                <a class="nav-item nav-link navbutton px-5 text-muted" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="far fa-star"></i> Nautillus </a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active text-center" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <h3>de 10h à 18h du lundi au vendredi inclus</h3>
-                <table class="table table-hover table-bordered my-3">
+                <table class="table table-hover table-bordered my-3 bg-secondary">
                     <thead>
                     <tr>
                         <th scope="col">Joueurs</th>
@@ -22,15 +23,27 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>Mark Otto</td>
-                        <td>Male</td>
+                        <td>3 joueurs</td>
+                        <td>23€ par personne</td>
+                    </tr>
+                    <tr>
+                        <td>4 joueurs</td>
+                        <td>21€ par personne</td>
+                    </tr>
+                    <tr>
+                        <td>5 joueurs</td>
+                        <td>19€ par personne</td>
+                    </tr>
+                    <tr>
+                        <td>6 joueurs</td>
+                        <td>17€ par personne</td>
                     </tr>
                     </tbody>
                 </table>
             </div>
             <div class="tab-pane fade text-center" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <h3>de 19h à 21h du lundi au jeudi, inclus de 19h à 22h le vendredi, de 10h à 22h en week-end</h3>
-                <table class="table table-hover table-bordered my-3">
+                <table class="table table-hover table-bordered my-3 bg-secondary">
                     <thead>
                     <tr>
                         <th scope="col">Joueurs</th>
@@ -39,14 +52,26 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>Mark Otto</td>
-                        <td>Male</td>
+                        <td>3 joueurs</td>
+                        <td>27€ par personne</td>
+                    </tr>
+                    <tr>
+                        <td>4 joueurs</td>
+                        <td>25€ par personne</td>
+                    </tr>
+                    <tr>
+                        <td>5 joueurs</td>
+                        <td>23€ par personne</td>
+                    </tr>
+                    <tr>
+                        <td>6 joueurs</td>
+                        <td>21€ par personne</td>
                     </tr>
                     </tbody>
                 </table>
             </div>
             <div class="tab-pane fade text-center" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                <table class="table table-hover table-bordered my-3">
+                <table class="table table-hover table-bordered my-3 bg-secondary">
                     <thead>
                     <tr>
                         <th scope="col">Joueurs</th>
@@ -55,12 +80,21 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>Mark Otto</td>
-                        <td>Male</td>
+                        <td>2 joueurs</td>
+                        <td>32€ par personne</td>
                     </tr>
+                    <tr>
+                        <td>3 à 4 joueurs</td>
+                        <td>25€ par personne</td>
+                    </tr>
+
                     </tbody>
                 </table>
             </div>
         </div>
+        <div class="student text-center my-1">
+            <small>*Tarif étudiant : de 10h à 17h du lundi au vendredi inclus 4 joueurs min. :15 euros par joueur Sur présentation d’un justificatif</small>
+        </div>
     </div>
+    </section>
 {% endblock %}
