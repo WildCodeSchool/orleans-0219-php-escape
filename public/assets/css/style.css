@@ -374,6 +374,8 @@ footer {
     background-position: top;
     background-repeat: no-repeat;
     max-height: 350px;
+    z-index: 2; /* Place le footer en premier plan */
+    position: relative; /* Active le z-index */
 }
 
 footer p {
@@ -431,10 +433,6 @@ footer p a:hover {
     color: orange;
 }
 
-#missions {
-    font-family: monospace;
-}
-
 #missions .card .card-img-top {
     height: 20em;
     transition: transform .2s;
@@ -449,16 +447,21 @@ footer p a:hover {
     font-size: 4em;
 }
 
-#missions .container {
+#missions {
+    font-family: monospace;
+    padding-bottom: 20vh;
+    margin-bottom: -20vh;
+    margin-left: 5em;
+    margin-right: 8em;
     display: flex;
     text-align: center;
     flex-flow: row wrap;
     align-items: stretch;
     justify-content: space-between;
     position: relative;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 9em;
     background-color: rgba(17, 8, 2, 0.7);
+    z-index: 1;
 }
 
 #missions .card-deck .card {
