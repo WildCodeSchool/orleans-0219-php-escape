@@ -278,3 +278,20 @@ footer p a:hover {
 .footer-center img:hover {
     filter: grayscale(0);
 }
+
+/*======================= FAQ =======================*/
+
+
+.card-1
+{
+    background-color: #F0E48F;
+}
+
+.card-header
+{
+    background-color: #578F46;
+    font-color: black;
+}
+
+
+/*======================= END FAQ =======================*/
