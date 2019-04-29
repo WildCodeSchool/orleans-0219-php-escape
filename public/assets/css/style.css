@@ -417,7 +417,7 @@ footer p a:hover {
 
 /* PAGE PRICE */
 
-#price h2, #price h3,h4, .student {
+#price h2, #price h3,h4, .student, .nav-link {
     color: white;
     font-family: "courier new";
 }
