@@ -439,3 +439,9 @@ footer p a:hover {
 #price .height {
     height: 400px;
 }
+#price thead {
+    border-bottom: white solid 2px;
+}
+#price table, .btnmission {
+    border-radius: 5px;
+}
