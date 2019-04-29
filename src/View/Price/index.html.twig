@@ -1,20 +1,23 @@
 {% extends '/layoutVisitor.html.twig' %}
 
 {% block content %}
-    <section id="price">
-    <div class="container space">
+    <section id="price" class="container space">
+        <div class="alert alert-warning text-center pb-3" role="alert">
+            <i class="fas fa-exclamation-triangle pr-5"></i> Merci de vous présenter 15 minutes avant l'heure de votre réservation <i class="fas fa-exclamation-triangle pl-5"></i>
+        </div>
         <h2 class="text-center">Tarifs</h2>
+        <div class="height">
         <nav>
             <div class="nav nav-tabs justify-content-center my-3" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active navbutton px-5 text-muted" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> Heures Creuses</a>
-                <a class="nav-item nav-link navbutton px-5 text-muted" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> Heures Pleines</a>
-                <a class="nav-item nav-link navbutton px-5 text-muted" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="far fa-star"></i> Nautillus </a>
+                <a class="nav-item nav-link active navbutton px-5 text-success font-weight-bold" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> Heures Creuses</a>
+                <a class="nav-item nav-link navbutton px-5 text-success font-weight-bold" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> Heures Pleines</a>
+                <a class="nav-item nav-link navbutton px-5 text-success font-weight-bold" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="far fa-star"></i> Nautilus </a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active text-center" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <h3>de 10h à 18h du lundi au vendredi inclus</h3>
-                <table class="table table-hover table-bordered my-3 bg-secondary">
+                <table class="table table-borderless table-hover my-3 bg-secondary">
                     <thead>
                     <tr>
                         <th scope="col">Joueurs</th>
@@ -43,7 +46,7 @@
             </div>
             <div class="tab-pane fade text-center" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <h3>de 19h à 21h du lundi au jeudi, inclus de 19h à 22h le vendredi, de 10h à 22h en week-end</h3>
-                <table class="table table-hover table-bordered my-3 bg-secondary">
+                <table class="table table-borderless table-hover my-3 bg-secondary">
                     <thead>
                     <tr>
                         <th scope="col">Joueurs</th>
@@ -71,7 +74,7 @@
                 </table>
             </div>
             <div class="tab-pane fade text-center" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                <table class="table table-hover table-bordered my-3 bg-secondary">
+                <table class="table table-borderless table-hover my-3 bg-secondary">
                     <thead>
                     <tr>
                         <th scope="col">Joueurs</th>
@@ -95,6 +98,16 @@
         <div class="student text-center my-1">
             <small>*Tarif étudiant : de 10h à 17h du lundi au vendredi inclus 4 joueurs min. :15 euros par joueur Sur présentation d’un justificatif</small>
         </div>
-    </div>
+        </div>
+        <div class="row justify-content-center">
+<div class="col-md-5 btnmission text-center my-5 py-5">
+        <h4 class="join pt-4">N'attendez plus et rejoingnez-nous en réservant vos places dès maintenant</h4>
+        <div class="btn btn-lg btn-danger">Réserver <i class="fas fa-shopping-cart"></i></div>
+</div>
+        <div class="col-md-5 btnmission text-center my-5 py-5 ml-2">
+        <h4 class="join">Vous pouvez également consulter l'intégralité de nos missions pour trouver celle qui vous correspond le mieux</h4>
+        <div class="btn btn-lg btn-success">Missions</div>
+</div>
+        </div>
     </section>
 {% endblock %}
