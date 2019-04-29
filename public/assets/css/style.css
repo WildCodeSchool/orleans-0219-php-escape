@@ -424,3 +424,88 @@ footer p a:hover {
 #price .student {
     font-style: italic;
 }
+
+/*===================> Page Missions <====================*/
+
+.checked {
+    color: orange;
+}
+
+#missions {
+    font-family: monospace;
+}
+
+#missions .card .card-img-top {
+    height: 20em;
+    transition: transform .2s;
+    overflow: hidden;
+    filter: grayscale(1);
+    transition: ease 0.2s;
+}
+
+#missions .title {
+    font-variant: small-caps;
+    color: white;
+    font-size: 4em;
+}
+
+#missions .container {
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: rgba(17, 8, 2, 0.7);
+}
+
+#missions .card-deck .card {
+    display: block;
+    max-width: 30em;
+    max-height: 35em;
+    text-align: center;
+    box-shadow: 4px 3px 5px 2px rgba(132, 132, 132, 0.59);
+    margin-top: 4em;
+    margin-bottom: 4em;
+    overflow: hidden;
+}
+
+#missions .card-deck .card-img-top:hover {
+    box-shadow: 4px 3px 5px 2px rgba(239, 239, 239, 0.59);
+    transform: scale(1.1);
+    filter: grayscale(0)
+}
+
+#missions .card-deck .card .card-img-overlay {
+    display: none;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#missions .card-deck .card:hover .card-img-overlay {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+#missions .card-body {
+    text-align: center;
+}
+
+#missions h5 {
+    color: black;
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+#missions p {
+    font-size: 0.8em;
+}
+
+#missions .row {
+    display: flex;
+}
+
+/*===================> Page Missions <====================*/
