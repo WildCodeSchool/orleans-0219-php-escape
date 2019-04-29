@@ -292,12 +292,12 @@ nav img{
     min-height: 420px;
 }
 #assets .card-title {
-    color: #164e1e;
+    color: black;
     position: relative;
 }
 #assets .card {
     position: relative;
-    background-image: url("/assets/images/295a135aaa6be7e4debb5b8f816a46d5.jpg");
+    background-image: url("http://www.auriol-location.com/wp-content/uploads/2016/03/background-wood-board-parquet.jpg");
     border-radius: 10px;
     z-index: 1;
     transition: 0.25s ease-in-out;
@@ -305,13 +305,13 @@ nav img{
 }
 #assets .card-title {
     font-size: xx-large;
-    color: azure;
+    color: black;
     padding-top: 120px;
 }
 #assets .card-text {
     font-family: "boycott";
     font-size: xx-large;
-    color: white;
+    color: black;
 }
 .container-fluid {
     height: 150px;
@@ -324,7 +324,7 @@ nav img{
     left: 5px;
     top: 35px;
     opacity: 0;
-    color: azure;
+    color: black;
     transition: 0.5s ease;
     font-family: "atype";
     font-weight: bold;
@@ -441,10 +441,22 @@ footer p a:hover {
 
 /* PAGE PRICE */
 
-#price h2, #price h3,td,th, .student {
+#price h2, #price h3,h4, .student {
     color: white;
     font-family: "courier new";
 }
 #price .student {
     font-style: italic;
+}
+
+#price table {
+    background-image: url("http://www.auriol-location.com/wp-content/uploads/2016/03/background-wood-board-parquet.jpg");
+}
+#price .btnmission {
+    background-image: url("http://www.auriol-location.com/wp-content/uploads/2016/03/background-wood-board-parquet.jpg");
+    height: 250px;
+}
+
+#price td, th, .join {
+    color: black;
 }
