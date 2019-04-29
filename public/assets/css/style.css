@@ -285,7 +285,7 @@ nav img{
 }
 #assets .card {
     position: relative;
-    background-image: url("http://www.auriol-location.com/wp-content/uploads/2016/03/background-wood-board-parquet.jpg");
+    background-image: url("/assets/images/background-wood-board-parquet.jpg");
     border-radius: 10px;
     z-index: 1;
     transition: 0.25s ease-in-out;
@@ -426,10 +426,10 @@ footer p a:hover {
 }
 
 #price table {
-    background-image: url("http://www.auriol-location.com/wp-content/uploads/2016/03/background-wood-board-parquet.jpg");
+    background-image: url("/assets/images/background-wood-board-parquet.jpg");
 }
 #price .btnmission {
-    background-image: url("http://www.auriol-location.com/wp-content/uploads/2016/03/background-wood-board-parquet.jpg");
+    background-image: url("/assets/images/background-wood-board-parquet.jpg");
     height: 250px;
 }
 
