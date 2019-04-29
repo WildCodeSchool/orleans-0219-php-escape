@@ -38,16 +38,12 @@ h2 {
     color: darkgreen;
     margin-top: 0;
     background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
+    border-radius: 10px;
     margin-left: 0.5em;
 }
 
 .nav-link:hover {
     color: darkgoldenrod;
-}
-
-.nav-link::before {
-    content: "|";
 }
 
 .dropdown-menu {
@@ -137,7 +133,7 @@ nav img{
 /*------------------- NAVBAR -------------------*/
 /*- ================= TITRE ==================== -*/
 
-.header {
+#title {
     background-image: url('../images/background/sign2.webp');
     background-size: contain;
     height: 50vh;
@@ -153,7 +149,7 @@ nav img{
     margin-right:auto;
 }
 
-.header h1 {
+#title h1 {
     padding-top:28vh;
     font-size: 5vh;
     font-variant: small-caps;
@@ -162,19 +158,19 @@ nav img{
     text-shadow: 1px 1px #fae6c6, -1px -1px #5f533b;
 }
 
-.header h1 .bigfont {
+#title h1 .bigfont {
     font-size: 1.5em;
     margin-top: 0;
 }
 
-.title h2 {
+#title h2 {
     text-align: center;
     font-variant: small-caps;
     font-family: monospace, 'courier new';
     color: white;
     font-size: 6vw;
     font-variant: small-caps;
-    padding-top: 2vh;
+    padding-top: 5vh;
 }
 
 .logo {
@@ -189,49 +185,53 @@ nav img{
 
 /*- ============== TRIPADVISOR ================= -*/
 
-.tripadvisor {
+#tripadvisor {
     color: white;
-    margin-top: 2em;
+    margin-top: 10vw;
 }
 
-.tripadvisor .note {
+#tripadvisor .note {
     width: 4em;
     height: 1em;
     vertical-align: middle;
 }
 
-.tripadvisor h5 {
+#tripadvisor h5 {
     font-family: monospace, 'courier new';
     font-style: italic;
 }
 
-.tripadvisor .col-sm-4 {
+#tripadvisor .col-sm-4 {
     text-align: center;
+    margin-top: 5vw;
 }
 
-.tripadvisor .col-sm-8 {
+#tripadvisor .col-sm-8 {
     text-align: center;
+    margin-top: 5vw;
 }
 
 .tripadvisorlogo {
     width: 14em;
     height: 10em;
     vertical-align: middle;
-    margin-left: 15%;
 }
 
 /*- ============== TRIPADVISOR ================= -*/
 
 /*- ============ BOUTON MISSIONS =============== -*/
 
-.buttonmissions {
+#missionButton {
     background-image: url("../images/background/backButton.webp");
     background-size: 100% 100%;
     width: 20em;
     height: 20em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.buttonmissions h3 {
+#missionButton h3 {
     font-size: 2.1em;
     text-shadow: 1px 1px #fae6c6, -1px -1px #5f533b;
     font-family: monospace, 'courier new';
@@ -241,7 +241,7 @@ nav img{
     padding-left: 2.3em;
 }
 
-.buttonmissions a {
+#missionButton a {
     text-decoration: none;
     color: #201004;
 
@@ -253,7 +253,7 @@ nav img{
     100% { text-shadow: 1px 1px #fa2e2d, -1px -1px #5f533b; }
 }
 
-.buttonmissions a:hover {
+#missionButton a:hover {
     text-shadow: 1px 1px #fa2e2d, -1px -1px #5f533b;
     animation: none;
 }
