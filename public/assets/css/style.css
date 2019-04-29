@@ -347,30 +347,35 @@ opacity: 0;
 
 /*======================= NEWS =======================*/
 
-.tweet .card {
-    background-color: rgba(255, 255, 255, 0.47);
+#news h2 {
+    text-align: center;
+    color: white;
+}
+
+#news .card {
+    background-color: rgba(32, 16, 4, 0.6);
     border-radius: 10px;
     color: #bbbbbb;
     box-shadow: 5px 4px 9px -3px rgba(0,0,0,0.41);
 }
 
-.tweet .card-header {
+#news .card-header {
     font-variant: small-caps;
 }
 
-.tweet .card-body {
+#news .card-body {
     max-height: 10em;
     overflow: auto;
     font-size: 1em;
     font-family: monospace, 'courier new';
 }
 
-.tweet .card:hover {
+#news .card:hover {
     background-color: rgba(255, 255, 255);
     color: #000;
 }
 
-.tweet .btn-news {
+#news .btn-news {
     background-color: darkgoldenrod;
     margin-bottom: 1em;
     box-shadow: 5px 4px 9px -3px rgba(0,0,0,0.41);
