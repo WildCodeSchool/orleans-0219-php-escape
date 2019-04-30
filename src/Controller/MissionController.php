@@ -19,6 +19,6 @@ class MissionController extends AbstractController
     {
         $missionManager = new MissionManager();
         $missions = $missionManager->selectAll();
-        return $this->twig->render('Mission/index.html.twig', ['missions'=>$missions]);
+        return $this->twig->render('/Mission/index.html.twig', ['missions'=>$missions]);
     }
 }

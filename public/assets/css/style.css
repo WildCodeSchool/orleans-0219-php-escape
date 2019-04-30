@@ -502,7 +502,7 @@ footer p a:hover {
     display: flex;
 }
 
-#missions .icon-star {
+#missions .fas {
     color: darkgoldenrod;
 }
 
@@ -513,10 +513,6 @@ footer p a:hover {
 #missions .btn {
     bottom : 1em;
     left: auto;
-}
-
-#missions .icon-star, .icon-star-empty {
-    font-size: 2em;
 }
 
 #missions .card-text {

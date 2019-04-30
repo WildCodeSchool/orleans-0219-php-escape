@@ -25,6 +25,6 @@ class PriceController extends AbstractController
     {
         $missionManager = new MissionManager();
         $missions = $missionManager->selectAll();
-        return $this->twig->render('Price/index.html.twig');
+        return $this->twig->render('Price/index.html.twig', ['missions'=>$missions]);
     }
 }
