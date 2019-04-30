@@ -427,6 +427,7 @@ footer p a:hover {
 #faq
 {
     margin-top: 15em;
+    min-height: 100vh;
 }
 
 #carte
