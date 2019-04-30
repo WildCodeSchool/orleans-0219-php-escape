@@ -3,7 +3,7 @@
 {% block content %}
     <section id="price" class="container space">
         <div class="alert alert-warning text-center pb-3" role="alert">
-            <i class="fas fa-exclamation-triangle pr-5"></i> Merci de vous présenter 15 minutes avant l'heure de votre réservation <i class="fas fa-exclamation-triangle pl-5"></i>
+            <i class="fas fa-exclamation-triangle pr-5 mr-5"></i> Merci de vous présenter 15 minutes avant l'heure de votre réservation <i class="fas fa-exclamation-triangle pl-5 ml-5"></i>
         </div>
         <h2 class="text-center">Tarifs</h2>
         <div class="height">
@@ -108,6 +108,62 @@
         <h4 class="join">Vous pouvez également consulter l'intégralité de nos missions pour trouver celle qui vous correspond le mieux</h4>
         <div class="btn btn-lg btn-success">Missions</div>
 </div>
+        </div>
+
+        <div id="accordion" class="mt-5">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0 text-center text-dark">
+                        <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Evénement <i class="fas fa-gift"></i>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Vous êtes à la recherche du cadeau hors normes pour une occasion absolument exceptionnelle ?</p>
+                        <p>Pour vos anniversaires, enterrements de vie de célibataire, fêtes de famille, départ en retraite ou toute autre occasion... nous avons LA solution qui fera de vous le héros aux idées incroyablement pertinentes :
+                            Notre Esc'ape box !</p>
+                        <p>Le concept : une session à emporter, toute ficelée, que vous pourrez mettre en œuvre très facilement chez vous, chez maman, sur votre lieu de travail, dans votre salle des fêtes, bref, où vous voulez.</p>
+
+                        <p>Vous ne trouvez pas la box de vos rêves ? Qu'à cela ne tienne, nous vous en créons une sur mesure.</p>
+
+                        <p>Alors ? Heureux ?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0 text-center text-dark">
+                        <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Entreprise <i class="fas fa-briefcase"></i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Pour vous, professionnels, Esc’ape se met en quatre !</p>
+                        Vous pouvez compter sur nous pour l'organisation de :
+
+                        <ul>
+                            <li>vos séminaires et incentives</li>
+                            <li>vos réunions et formations</li>
+                            <li>vos sessions de recrutements</li>
+                            <li>vos cocktails et soirées clientèle</li>
+                        </ul>
+                        <p>Dans nos locaux à St Pryvé St Mesmin, tout est conçu pour allier réunions studieuses et détente, tout en mobilisant les compétences de vos collaborateurs, en renforçant la cohésion de vos équipes et en fluidifiant la communication et les échanges au sein de votre entreprise.</p>
+
+                        Nos atouts :
+                        <ul>
+                            <li>une salle de réunion équipée d’un vidéoprojecteur</li>
+                            <li>des activités ludiques variées pour agrémenter votre team building grâce à notre partenaire Le Beignet Doré Parc</li>
+                            <li>la possibilité d’organiser buffets, petits déj' ou cocktails</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 {% endblock %}

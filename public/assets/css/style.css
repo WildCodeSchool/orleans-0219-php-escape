@@ -445,3 +445,17 @@ footer p a:hover {
 #price table, .btnmission {
     border-radius: 5px;
 }
+#accordion .card-body, #accordion .card-header{
+    font-family: "courier new";
+
+}
+#accordion .card-header {
+background-image: url("/assets/images/background-wood-board-parquet.webp")
+}
+#accordion .card-body {
+    background-color: rgba(63,119,8,0);
+}
+#accordion ul {
+    list-style: none;
+    list-style-image: url("/assets/images/feuille.png");
+}
