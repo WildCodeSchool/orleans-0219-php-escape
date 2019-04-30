@@ -19,7 +19,7 @@ class MissionsManager extends AbstractManager
     }
 
     /**
-     * @param array $item
+     * @param array $mission
      * @return int
      */
     public function insert(array $mission): int
@@ -47,7 +47,7 @@ class MissionsManager extends AbstractManager
 
 
     /**
-     * @param array $item
+     * @param array $mission
      * @return bool
      */
     public function update(array $mission): bool
