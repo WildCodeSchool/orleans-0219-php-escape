@@ -1,50 +1,309 @@
+/*- ======================== BODY ========================= -*/
+
+body {
+    background-color: #002905;
+    background-image: url('../images/background/xv.png');
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: "courier new";
+}
+
+/*------------------- NAVBAR -------------------*/
+
+#navbar .navbar {
+    background-image: url('../images/navbar/NavbarBg.png');
+    background-size: 100% 100%;
+    max-height: 140px;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    font-family: monospace, 'courier new';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    z-index: 1000;
+}
+
+#navbar .titles {
+    padding-bottom: 2em;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#navbar .nav-link {
+    color: darkgreen;
+    margin-top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-left: 0.5em;
+}
+
+#navbar .nav-link:hover {
+    color: darkgoldenrod;
+}
+
+#navbar .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    border: none;
+}
+
+#navbar .dropdown-item::before {
+    content: "|";
+}
+
+#navbar .dropdown-item{
+    color: darkgreen;
+    padding-left: 1em;
+}
+
+#navbar .dropdown-item:hover {
+    background-color: white;
+    color: goldenrod;
+    border-radius: 20px;
+    -webkit-box-shadow: 15px 14px 29px -3px rgba(0,0,0,0.41);
+    -moz-box-shadow: 15px 14px 29px -3px rgba(0,0,0,0.41);
+    box-shadow: 15px 14px 29px -3px rgba(0,0,0,0.41);
+}
+
+#navbar .navbar-expand-sm.nav-link {
+    color : black;
+}
+
+nav img{
+    width: 8em;
+    height: 6em;
+    vertical-align: middle;
+    border-radius: 30px 1px 1px 1px;
+    margin-top: 1.5em;
+}
+
+#navbar .dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+/* ----- Elles sont necessaires pour l'instant -------> */
+
+@media screen and (max-width: 837px) {
+    #navbar .navbar img {
+        margin-top: 1.1em;
+    }
+
+    #navbar .nav-link {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #navbar .navbar {
+        max-height: 70px;
+        padding: 0;
+    }
+
+    #navbar .nav-link {
+        font-size: 0.8em;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 10px;
+        border: none;
+        margin: 0.1em 1em 0.1em 1em;
+    }
+
+    #navbar .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    #navbar .navbar img {
+        width: 5em;
+        height: 4em;
+        margin-top: 0;
+    }
+
+    #navbar .navbar-brand {
+        padding: 0;
+    }
+
+    #navbar .navbar-toggler {
+        color: black;
+        display: block;
+        margin-right: 1em;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+/*- ================= TITRE ==================== -*/
+
+#title {
+    background-image: url('../images/background/sign2.webp');
+    background-size: contain;
+    height: 50vh;
+    width: 80vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 3.3em;
+    font-family: monospace, 'courier new';
+    color: white;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#title h1 {
+    padding-top:28vh;
+    font-size: 5vh;
+    font-variant: small-caps;
+    vertical-align: middle;
+    color: #201004;
+    text-shadow: 1px 1px #fae6c6, -1px -1px #5f533b;
+}
+
+#title h1 .bigfont {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+#title h2 {
+    text-align: center;
+    font-variant: small-caps;
+    font-family: monospace, 'courier new';
+    color: white;
+    font-size: 6vw;
+    font-variant: small-caps;
+    padding-top: 5vh;
+}
+
+.logo {
+    width: 1.7em;
+    height: 1.7em;
+    vertical-align: middle;
+    margin-left: 0.2em;
+    margin-bottom: 1.2em;
+}
+
+/*- ============== TRIPADVISOR ================= -*/
+
+#tripadvisor {
+    color: white;
+    margin-top: 10vw;
+    background-color: rgba(32, 16, 4, 0.47);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#tripadvisor .note {
+    width: 4em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+#tripadvisor h5 {
+    font-family: monospace, 'courier new';
+    font-style: italic;
+}
+
+#tripadvisor .col-sm-4 {
+    text-align: center;
+    margin-top: 5vw;
+}
+
+#tripadvisor .col-sm-8 {
+    text-align: center;
+    margin-top: 5vw;
+}
+
+.tripadvisorlogo {
+    width: 14em;
+    height: 10em;
+    vertical-align: middle;
+}
+
+/*- ============ BOUTON MISSIONS =============== -*/
+
+#missionButton {
+    background-image: url("../images/background/backButton.webp");
+    background-size: 100% 100%;
+    width: 20em;
+    height: 20em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#missionButton h3 {
+    font-size: 2.1em;
+    text-shadow: 1px 1px #fae6c6, -1px -1px #5f533b;
+    font-family: monospace, 'courier new';
+    font-variant: small-caps;
+    transform: rotate(-9deg);
+    padding-top: 3.1em;
+    padding-left: 2.3em;
+}
+
+#missionButton a {
+    text-decoration: none;
+    color: #201004;
+
+    animation: a 400ms infinite alternate;
+}
+
+@-webkit-keyframes a {
+    0% { text-shadow: 1px 1px #fae6c6, -1px -1px #5f533b; }
+    100% { text-shadow: 1px 1px #fa2e2d, -1px -1px #5f533b; }
+}
+
+#missionButton a:hover {
+    text-shadow: 1px 1px #fa2e2d, -1px -1px #5f533b;
+    animation: none;
+}
 
 /* ATOUTS */
 @font-face {
     font-family: "boycott";
     font-style: normal;
     font-weight: normal;
-    src: url("/assets/fonts/BOYCOTT_.TTF");
+    src: url("../../assets/fonts/BOYCOTT_.TTF");
 
 }
 @font-face {
     font-family: "atype";
     font-style: normal;
     font-weight: normal;
-    src: url("/assets/fonts/ATypewriterForMe.ttf");
+    src: url("../../assets/fonts/ATypewriterForMe.ttf");
 
 }
-.card {
+
+#assets .card {
     min-width: 310px;
     max-width: 310px;
     min-height: 420px;
 }
-.card-title {
-    color: #164e1e;
+#assets .card-title {
+    color: black;
     position: relative;
 }
-.card {
+#assets .card {
     position: relative;
-    background-image: url("/assets/images/295a135aaa6be7e4debb5b8f816a46d5.jpg");
+    background-image: url("/assets/images/background-wood-board-parquet.webp");
     border-radius: 10px;
     z-index: 1;
     transition: 0.25s ease-in-out;
 
 }
-.card-title {
+#assets .card-title {
     font-size: xx-large;
-    color: azure;
+    color: black;
     padding-top: 120px;
 }
-.card-text {
+#assets .card-text {
     font-family: "boycott";
     font-size: xx-large;
-    color: white;
+    color: black;
 }
-.container-fluid {
-    height: 150px;
-}
-.enhover {
+#assets .enhover {
     position: absolute;
     z-index: 0;
     min-width: 300px;
@@ -52,49 +311,83 @@
     left: 5px;
     top: 35px;
     opacity: 0;
-    color: azure;
+    color: black;
     transition: 0.5s ease;
     font-family: "atype";
     font-weight: bold;
 
 }
-.card:hover .enhover {
+#assets .card:hover .enhover {
 opacity: 100;
 
 }
-.card:hover .doliprane {
+#assets .card:hover .doliprane {
 opacity: 0;
 }
-.doliprane {
+#assets .doliprane {
     transition: 0.5s ease;
     opacity: 100;
 }
-.card:hover {
+#assets .card:hover {
     transform: scale(1.1);
 }
+
+/*======================= NEWS =======================*/
+
+#news h2 {
+    text-align: center;
+    color: white;
+}
+
+#news .card {
+    background-color: rgba(32, 16, 4, 0.6);
+    border-radius: 10px;
+    color: #bbbbbb;
+    box-shadow: 5px 4px 9px -3px rgba(0,0,0,0.41);
+}
+
+#news .card-header {
+    font-variant: small-caps;
+}
+
+#news .card-body {
+    max-height: 10em;
+    overflow: auto;
+    font-size: 1em;
+    font-family: monospace, 'courier new';
+}
+
+#news .card:hover {
+    background-color: white;
+    color: #000;
+}
+
+#news .btn-news {
+    background-color: darkgoldenrod;
+    margin-bottom: 1em;
+    box-shadow: 5px 4px 9px -3px rgba(0,0,0,0.41);
+}
+
 /*FOOTER*/
 
 footer {
-    padding-top: 6em;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding: 3em 5em 0 5em;
     background-image: url("../images/footer/footer.png");
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
+    max-height: 350px;
+    z-index: 2; /* Place le footer en premier plan */
+    position: relative; /* Active le z-index */
 }
 
 footer p {
     color : white;
     font-family: monospace, 'Courier New';
-    font-size: 1.5em;
+    font-size: 1.5vw;
 }
 
 .footer-center img{
     max-width: 5vw;
-}
-
-footer .row {
-    min-width: 100%;
 }
 
 footer p a {
@@ -119,4 +412,154 @@ footer p a:hover {
 
 .footer-center img:hover {
     filter: grayscale(0);
+}
+
+.space {
+    margin-top: 13em;
+    margin-bottom: 6em;
+}
+
+/*===================> Page Mission <====================*/
+
+.checked {
+    color: orange;
+}
+
+#missions .card .card-img-top {
+    height: 20em;
+    transition: transform .2s, ease 0.2s;
+    overflow: hidden;
+    filter: grayscale(1);;
+}
+
+#missions .title {
+    font-variant: small-caps;
+    color: white;
+    font-size: 4em;
+}
+
+#missions {
+    font-family: monospace;
+    padding-bottom: 20vh;
+    margin-bottom: -20vh;
+    margin-left: 5em;
+    margin-right: 8em;
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 9em;
+    background-color: rgba(17, 8, 2, 0.7);
+    z-index: 1;
+}
+
+#missions .card-deck .card {
+    display: block;
+    max-width: 30em;
+    max-height: 35em;
+    text-align: center;
+    box-shadow: 4px 3px 5px 2px rgba(132, 132, 132, 0.59);
+    margin-top: 4em;
+    margin-bottom: 4em;
+    overflow: hidden;
+}
+
+#missions .card-deck .card-img-top:hover {
+    box-shadow: 4px 3px 5px 2px rgba(239, 239, 239, 0.59);
+    transform: scale(1.1);
+    filter: grayscale(0)
+}
+
+#missions .card-deck .card .card-img-overlay {
+    display: none;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#missions .card-deck .card:hover .card-img-overlay {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+#missions .card-body {
+    text-align: center;
+}
+
+#missions h5 {
+    color: black;
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+#missions p {
+    font-size: 0.8em;
+}
+
+#missions .row {
+    display: flex;
+}
+
+#missions .fas {
+    color: darkgoldenrod;
+}
+
+#missions .card-img {
+    overflow: hidden;
+}
+
+#missions .btn {
+    bottom : 1em;
+    left: auto;
+}
+
+#missions .card-text {
+    font-size: 12pt;
+}
+
+/* PAGE PRICE */
+
+#price h2, #price h3,h4, .student, .nav-link {
+    color: white;
+    font-family: "courier new";
+}
+#price .student {
+    font-style: italic;
+}
+
+#price table {
+    background-image: url("/assets/images/background-wood-board-parquet.webp");
+}
+#price .btnmission {
+    background-image: url("/assets/images/background-wood-board-parquet.webp");
+    height: 250px;
+}
+
+#price td, th, .join {
+    color: black;
+}
+#price .height {
+    height: 400px;
+}
+#price thead {
+    border-bottom: white solid 2px;
+}
+#price table, .btnmission {
+    border-radius: 5px;
+}
+#accordion .card-body, #accordion .card-header{
+    font-family: "courier new";
+
+}
+#accordion .card-header {
+background-image: url("/assets/images/background-wood-board-parquet.webp")
+}
+#accordion .card-body {
+    background-color: rgba(63,119,8,0);
+}
+#accordion ul {
+    list-style: none;
+    list-style-image: url("/assets/images/feuille.png");
 }

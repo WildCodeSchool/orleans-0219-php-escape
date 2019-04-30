@@ -1,18 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: aurelwcs
- * Date: 08/04/19
- * Time: 18:40
- */
+
 
 namespace App\Controller;
 
 use App\Model\MissionManager;
 
-class HomeController extends AbstractController
+class MissionController extends AbstractController
 {
-
     /**
      * Display home page
      *
@@ -25,6 +19,6 @@ class HomeController extends AbstractController
     {
         $missionManager = new MissionManager();
         $missions = $missionManager->selectAll();
-        return $this->twig->render('Home/index.html.twig', ['missions'=>$missions]);
+        return $this->twig->render('/Mission/index.html.twig', ['missions'=>$missions]);
     }
 }

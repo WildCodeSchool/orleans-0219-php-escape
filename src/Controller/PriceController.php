@@ -10,7 +10,7 @@ namespace App\Controller;
 
 use App\Model\MissionManager;
 
-class HomeController extends AbstractController
+class PriceController extends AbstractController
 {
 
     /**
@@ -25,6 +25,6 @@ class HomeController extends AbstractController
     {
         $missionManager = new MissionManager();
         $missions = $missionManager->selectAll();
-        return $this->twig->render('Home/index.html.twig', ['missions'=>$missions]);
+        return $this->twig->render('Price/index.html.twig', ['missions'=>$missions]);
     }
 }

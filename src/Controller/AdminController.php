@@ -3,7 +3,6 @@
 
 namespace App\Controller;
 
-
 use App\Model\ItemManager;
 use App\Model\MissionsManager;
 
@@ -23,7 +22,7 @@ class AdminController extends AbstractController
         $missionsManager = new MissionsManager();
         $missions = $missionsManager->selectAll();
 
-        return $this->twig->render('Admin/admin.html.twig', ['missions' => $missions]);
+        return $this->twig->render('/Admin/admin.html.twig', ['missions' => $missions]);
     }
 
     /**
@@ -45,6 +44,6 @@ class AdminController extends AbstractController
             $missionsManager->update($missions);
         }
 
-        return $this->twig->render('Item/edit.html.twig', ['missions' => $item]);
+        return $this->twig->render('Item/edit.html.twig', ['missions' => $missions]);
     }
 }
