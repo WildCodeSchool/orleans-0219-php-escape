@@ -1,39 +1,41 @@
 {% extends '/layoutVisitor.html.twig' %}
 
+{% block stylesheet %}
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+{% endblock %}
+
 {% block content %}
     <section id="missions">
         <div class="container">
-
             <div class="title">
-                <h1>Choisis ta mission!</h1>
+                <h1>Choisis ta mission !</h1>
             </div>
-
             <div class="row justify-content-center card-deck">
-                {%  for mission in missions %}
+                {% for mission in missions %}
                     <div class="col-lg-6 d-flex justify-content-center">
-
                         <div class="card m-4">
-                            <a href="#"><img
-                                        src="/assets/images/missions/{{ mission.image }}"
-                                        class="card-img-top" alt="{{ mission.title }}"></a>
+                            <div class="card-img">
+                                <a href="#"><img
+                                            src="/assets/images/missions/{{ mission.image }}"
+                                            class="card-img-top" alt="{{ mission.title }}"></a>
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">{{ mission.title }}</h5>
                                 <div class="row">
                                     <p class="card-text col">{{ mission.players }} </br> joueurs</p>
-                                    <p class="card-text col"> Difficulté: </br>
+                                    <p class="card-text col">Difficulté: </br>
                                         {% for i in 1..5 %}
-                                            <i class="icon-star{{i > mission.level ? '-empty' }}"></i>
+                                            <i class="icon-star{{ i > mission.level ? '-empty' }}"></i>
                                         {% endfor %}
                                     </p>
                                 </div>
-                                <a href="#" class="btn btn-success">Reserver</a>
+                                <a href="https://www-252b.bookeo.com/bookeo/b_esc-ape_start.html?ctlsrc2=ltGAw45LXE9Slno54iHK2MW0K4YcGHhHiHXtBcbfXVo%3D&src=02t"
+                                   class="btn btn-success">Réserver</a>
                             </div>
                         </div>
-
                     </div>
                 {% endfor %}
             </div>
-
         </div>
     </section>
 {% endblock content %}

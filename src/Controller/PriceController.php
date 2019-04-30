@@ -8,6 +8,8 @@
 
 namespace App\Controller;
 
+use App\Model\MissionManager;
+
 class PriceController extends AbstractController
 {
 
@@ -21,6 +23,8 @@ class PriceController extends AbstractController
      */
     public function index()
     {
+        $missionManager = new MissionManager();
+        $missions = $missionManager->selectAll();
         return $this->twig->render('Price/index.html.twig');
     }
 }

@@ -82,6 +82,10 @@ nav img{
     margin-top: 1.5em;
 }
 
+#navbar .dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
 /* ----- Elles sont necessaires pour l'instant -------> */
 
 @media screen and (max-width: 837px) {
@@ -502,7 +506,22 @@ footer p a:hover {
     color: darkgoldenrod;
 }
 
-/*===================> Page Missions <====================*/
+#missions .card-img {
+    overflow: hidden;
+}
+
+#missions .btn {
+    bottom : 1em;
+    left: auto;
+}
+
+#missions .icon-star, .icon-star-empty {
+    font-size: 2em;
+}
+
+#missions .card-text {
+    font-size: 12pt;
+}
 
 /* PAGE PRICE */
 
