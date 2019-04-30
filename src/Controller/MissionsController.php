@@ -3,6 +3,8 @@
 
 namespace App\Controller;
 
+use App\Model\MissionsManager;
+
 class MissionsController extends AbstractController
 {
     /**
@@ -15,6 +17,8 @@ class MissionsController extends AbstractController
      */
     public function index()
     {
-        return $this->twig->render('Missions/index.html.twig');
+        $missionsManager = new MissionsManager();
+        $missions = $missionsManager->selectAll();
+        return $this->twig->render('Missions/index.html.twig', ['missions'=>$missions]);
     }
 }
