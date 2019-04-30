@@ -1,0 +1,38 @@
+{% extends '/layoutVisitor.html.twig' %}
+
+{% block content %}
+
+    <section id="missionPage">
+        <div class="container">
+
+            <div class="title">
+                <h1>{{ mission.title }}</h1>
+                <h2>{{ mission.subtitle }}</h2>
+            </div>
+
+            <div class="card mission text-white">
+                <img src="/assets/images/missions/{{ mission.image }}"
+                     class="card-img" alt="{{ mission.title }}">
+                <div class="col-lg-4 card-img-overlay">
+                    <h5 class="card-title">{{ mission.title }}</h5>
+
+                    <p class="card-text col">{{ mission.players }}</br>joueurs </p>
+                    <p class="card-text col"> Difficulté: </br>
+                        {% for i in 1..5 %}
+                            <i class="fa{% if i > mission.level%}r{% else %}s{% endif %} fa-star"></i>
+                        {% endfor %}
+                    </p>
+
+                    <a href="/Price/index" class="btn btn-warning">Tarifs</a>
+                    <a href="#" class="btn btn-warning">Reserver</a>
+                </div>
+            </div>
+
+            <div class="description">
+                <p>{{ mission.description }}</p>
+                <a href="#" class="btn1 m-3 btn-warning">Reserver</a>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
