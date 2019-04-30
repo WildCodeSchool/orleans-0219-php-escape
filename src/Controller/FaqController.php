@@ -8,7 +8,7 @@
 
 namespace App\Controller;
 
-class HomeController extends AbstractController
+class FaqController extends AbstractController
 {
 
     /**
