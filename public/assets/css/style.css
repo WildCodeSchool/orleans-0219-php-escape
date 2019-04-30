@@ -263,14 +263,14 @@ nav img{
     font-family: "boycott";
     font-style: normal;
     font-weight: normal;
-    src: url("/assets/fonts/BOYCOTT_.TTF");
+    src: url("../../assets/fonts/BOYCOTT_.TTF");
 
 }
 @font-face {
     font-family: "atype";
     font-style: normal;
     font-weight: normal;
-    src: url("/assets/fonts/ATypewriterForMe.ttf");
+    src: url("../../assets/fonts/ATypewriterForMe.ttf");
 
 }
 
@@ -285,7 +285,7 @@ nav img{
 }
 #assets .card {
     position: relative;
-    background-image: url("/assets/images/295a135aaa6be7e4debb5b8f816a46d5.jpg");
+    background-image: url("../../assets/images/295a135aaa6be7e4debb5b8f816a46d5.jpg");
     border-radius: 10px;
     z-index: 1;
     transition: 0.25s ease-in-out;
@@ -356,7 +356,7 @@ opacity: 0;
 }
 
 #news .card:hover {
-    background-color: rgba(255, 255, 255);
+    background-color: white;
     color: #000;
 }
 
@@ -435,10 +435,9 @@ footer p a:hover {
 
 #missions .card .card-img-top {
     height: 20em;
-    transition: transform .2s;
+    transition: transform .2s, ease 0.2s;
     overflow: hidden;
-    filter: grayscale(1);
-    transition: ease 0.2s;
+    filter: grayscale(1);;
 }
 
 #missions .title {
