@@ -3,7 +3,7 @@
 
 namespace App\Model;
 
-class MissionsManager extends AbstractManager
+class MissionManager extends AbstractManager
 {
     /**
      *

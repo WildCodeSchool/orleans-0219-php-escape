@@ -3,9 +3,9 @@
 
 namespace App\Controller;
 
-use App\Model\MissionsManager;
+use App\Model\MissionManager;
 
-class MissionsController extends AbstractController
+class MissionController extends AbstractController
 {
     /**
      * Display home page
@@ -17,8 +17,8 @@ class MissionsController extends AbstractController
      */
     public function index()
     {
-        $missionsManager = new MissionsManager();
-        $missions = $missionsManager->selectAll();
+        $missionManager = new MissionManager();
+        $missions = $missionManager->selectAll();
         return $this->twig->render('Missions/index.html.twig', ['missions'=>$missions]);
     }
 }
