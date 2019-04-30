@@ -21,11 +21,9 @@
                                 <div class="row">
                                     <p class="card-text col">{{ mission.players }} </br> joueurs</p>
                                     <p class="card-text col"> Difficulté: </br>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
+                                        {% for i in 1..5 %}
+                                            <i class="icon-star{{i > mission.level ? '-empty' }}"></i>
+                                        {% endfor %}
                                     </p>
                                 </div>
                                 <a href="#" class="btn btn-success">Reserver</a>

@@ -498,6 +498,10 @@ footer p a:hover {
     display: flex;
 }
 
+#missions .icon-star {
+    color: darkgoldenrod;
+}
+
 /*===================> Page Missions <====================*/
 
 /* PAGE PRICE */
