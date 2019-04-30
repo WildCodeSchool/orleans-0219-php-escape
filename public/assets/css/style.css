@@ -82,6 +82,10 @@ nav img{
     margin-top: 1.5em;
 }
 
+#navbar .dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
 /* ----- Elles sont necessaires pour l'instant -------> */
 
 @media screen and (max-width: 837px) {
@@ -261,14 +265,14 @@ nav img{
     font-family: "boycott";
     font-style: normal;
     font-weight: normal;
-    src: url("/assets/fonts/BOYCOTT_.TTF");
+    src: url("../../assets/fonts/BOYCOTT_.TTF");
 
 }
 @font-face {
     font-family: "atype";
     font-style: normal;
     font-weight: normal;
-    src: url("/assets/fonts/ATypewriterForMe.ttf");
+    src: url("../../assets/fonts/ATypewriterForMe.ttf");
 
 }
 
@@ -354,7 +358,7 @@ opacity: 0;
 }
 
 #news .card:hover {
-    background-color: rgba(255, 255, 255);
+    background-color: white;
     color: #000;
 }
 
@@ -372,6 +376,8 @@ footer {
     background-position: top;
     background-repeat: no-repeat;
     max-height: 350px;
+    z-index: 2; /* Place le footer en premier plan */
+    position: relative; /* Active le z-index */
 }
 
 footer p {
@@ -411,6 +417,106 @@ footer p a:hover {
 .space {
     margin-top: 13em;
     margin-bottom: 6em;
+}
+
+/*===================> Page Mission <====================*/
+
+.checked {
+    color: orange;
+}
+
+#missions .card .card-img-top {
+    height: 20em;
+    transition: transform .2s, ease 0.2s;
+    overflow: hidden;
+    filter: grayscale(1);;
+}
+
+#missions .title {
+    font-variant: small-caps;
+    color: white;
+    font-size: 4em;
+}
+
+#missions {
+    font-family: monospace;
+    padding-bottom: 20vh;
+    margin-bottom: -20vh;
+    margin-left: 5em;
+    margin-right: 8em;
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 9em;
+    background-color: rgba(17, 8, 2, 0.7);
+    z-index: 1;
+}
+
+#missions .card-deck .card {
+    display: block;
+    max-width: 30em;
+    max-height: 35em;
+    text-align: center;
+    box-shadow: 4px 3px 5px 2px rgba(132, 132, 132, 0.59);
+    margin-top: 4em;
+    margin-bottom: 4em;
+    overflow: hidden;
+}
+
+#missions .card-deck .card-img-top:hover {
+    box-shadow: 4px 3px 5px 2px rgba(239, 239, 239, 0.59);
+    transform: scale(1.1);
+    filter: grayscale(0)
+}
+
+#missions .card-deck .card .card-img-overlay {
+    display: none;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#missions .card-deck .card:hover .card-img-overlay {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+#missions .card-body {
+    text-align: center;
+}
+
+#missions h5 {
+    color: black;
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+#missions p {
+    font-size: 0.8em;
+}
+
+#missions .row {
+    display: flex;
+}
+
+#missions .fas {
+    color: darkgoldenrod;
+}
+
+#missions .card-img {
+    overflow: hidden;
+}
+
+#missions .btn {
+    bottom : 1em;
+    left: auto;
+}
+
+#missions .card-text {
+    font-size: 12pt;
 }
 
 /* PAGE PRICE */
