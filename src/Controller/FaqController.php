@@ -21,6 +21,6 @@ class FaqController extends AbstractController
      */
     public function index()
     {
-        return $this->twig->render('Faq/index.html.twig');
+        return $this->twig->render('/Faq/index.html.twig');
     }
 }
