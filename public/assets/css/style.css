@@ -1,11 +1,9 @@
 /*- ======================== BODY ========================= -*/
 
 body {
-    background-image: url("https://image.freepik.com/free-vector/exotic-pattern-with-tropical-leaves-dark-forest_43605-2958.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-color: #002905;
+    background-image: url('../images/background/xv.png');
     background-attachment: fixed;
-    background-color: #201004;
     scroll-behavior: smooth;
 }
 
@@ -280,12 +278,12 @@ nav img{
     min-height: 420px;
 }
 #assets .card-title {
-    color: #164e1e;
+    color: black;
     position: relative;
 }
 #assets .card {
     position: relative;
-    background-image: url("../../assets/images/295a135aaa6be7e4debb5b8f816a46d5.jpg");
+    background-image: url("/assets/images/background-wood-board-parquet.webp");
     border-radius: 10px;
     z-index: 1;
     transition: 0.25s ease-in-out;
@@ -293,13 +291,13 @@ nav img{
 }
 #assets .card-title {
     font-size: xx-large;
-    color: azure;
+    color: black;
     padding-top: 120px;
 }
 #assets .card-text {
     font-family: "boycott";
     font-size: xx-large;
-    color: white;
+    color: black;
 }
 #assets .enhover {
     position: absolute;
@@ -309,7 +307,7 @@ nav img{
     left: 5px;
     top: 35px;
     opacity: 0;
-    color: azure;
+    color: black;
     transition: 0.5s ease;
     font-family: "atype";
     font-weight: bold;
@@ -419,7 +417,7 @@ footer p a:hover {
 
 /* PAGE PRICE */
 
-#price h2, #price h3,td,th, .student {
+#price h2, #price h3,h4, .student, .nav-link {
     color: white;
     font-family: "courier new";
 }
@@ -511,3 +509,39 @@ footer p a:hover {
 }
 
 /*===================> Page Missions <====================*/
+
+#price table {
+    background-image: url("/assets/images/background-wood-board-parquet.webp");
+}
+#price .btnmission {
+    background-image: url("/assets/images/background-wood-board-parquet.webp");
+    height: 250px;
+}
+
+#price td, th, .join {
+    color: black;
+}
+#price .height {
+    height: 400px;
+}
+#price thead {
+    border-bottom: white solid 2px;
+}
+#price table, .btnmission {
+    border-radius: 5px;
+}
+#accordion .card-body, #accordion .card-header{
+    font-family: "courier new";
+
+}
+#accordion .card-header {
+background-image: url("/assets/images/background-wood-board-parquet.webp")
+}
+#accordion .card-body {
+    background-color: rgba(63,119,8,0);
+}
+#accordion ul {
+    list-style: none;
+    list-style-image: url("/assets/images/feuille.png");
+}
+
