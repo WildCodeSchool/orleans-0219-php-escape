@@ -583,14 +583,13 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
     justify-content: space-between;
     position: relative;
     background-color: rgba(17, 8, 2, 0.6);
-    font-variant: small-caps;
-
 }
 
 #contactUs h1 {
     color: white;
     font-size: 4em;
     margin-bottom: 1em;
+    font-variant: small-caps;
 }
 
 #contactUs .contactForm {
@@ -603,9 +602,21 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
     margin-top: 1em;
 }
 
-#contactUs .text-muted {
-    color: darkgoldenrod;
+#contactUs label{
+    font-variant: small-caps;
+    color: grey;
     font-size: 1.3em;
+}
+
+#contactUs a {
+    color: darkgoldenrod;
+    transition: ease 0.2s;
+}
+
+#contactUs a:hover {
+    color: #e9b122;
+    text-decoration: none;
+    text-shadow: 0 1px 5px rgba(255, 255, 255, 0.5);
 }
 
 /*-----------------> FORMULAIRE <----------------*/
@@ -614,6 +625,7 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
 
 
 #contactUs #adress h2 {
+    font-variant: small-caps;
     color: white;
     text-align: center;
     font-size: 3em;
@@ -648,7 +660,7 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
     margin-bottom: auto;
 }
 
-#contactUs #adress h3, span {
+#contactUs #adress h3, #contactUs #adress span {
     color: darkgoldenrod;
 }
 
