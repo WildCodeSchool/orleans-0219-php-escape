@@ -1,0 +1,43 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+    <section id="addadmin">
+        <h1 class="py-3 text-center text-light"> Ajoutez une nouvelle mission</h1>
+        <form method="post" class="container py-5 text-center">
+            <div class="form-group">
+                <label class="text-warning" for="title">Choisissez un titre</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Entrez un titre" name="title">
+            </div>
+            <div class="form-group">
+                <label class="text-warning" for="subtitle">Choisissez un sous-titre</label>
+                <input type="text" class="form-control" id="subtitle" placeholder="Entrez un sous-titre" name="subtitle">
+            </div>
+            <div class="form-group">
+                <label class="text-warning" for="players">Choissisez le nombre de joueurs</label>
+                <div class="row justify-content-center">
+                    <p class="text-center text-light mx-3 pt-2"> de </p>
+                    <input type="text" class="form-control col-md-1 text-center" id="formGroupExampleInput2" placeholder="Min" name="minplayers">
+                    <p class="text-center text-light mx-3 pt-2"> à </p>
+                    <input type="text" class="form-control col-md-1 pl-2 text-center" id="formGroupExampleInput2" placeholder="Max" name="maxplayers">
+                    <p class="text-center text-light mx-3 pt-2"> joueurs </p>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="text-warning" for="level">Choisissez un niveau de difficulté</label>
+                <input type="text" class="form-control" id="level" placeholder="Level de 1 à 5" name="level">
+            </div>
+            <div class="form-group">
+                <label class="text-warning" for="image">Ajoutez une image (à ajouter préalablement dans /assets/images/missions)</label></br>
+                <input type="text" class="form-control" id="image" placeholder="Manouvelleimage.png" name="image">
+            </div>
+            <div class="form-group">
+                <label for="description" class="text-warning">Votre description</label>
+                <textarea class="form-control" id="description" rows="7" name="description" placeholder="Décrivez votre mission"></textarea>
+            </div>
+
+            <div class="text-center mb-5">
+                <button type="submit" class="btn btn-warning">Créer ma mission</button>
+            </div>
+        </form>
+    </section>
+{% endblock %}
