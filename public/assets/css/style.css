@@ -452,7 +452,7 @@ footer p a:hover {
     align-items: stretch;
     justify-content: space-between;
     position: relative;
-    background-color: rgba(17, 8, 2, 0.7);
+    background-color: rgba(17, 8, 2, 0.6);
 }
 
 #missions .card-deck .card {
@@ -580,11 +580,12 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
     align-items: stretch;
     justify-content: space-between;
     position: relative;
-    background-color: rgba(17, 8, 2, 0.7);
+    background-color: rgba(17, 8, 2, 0.6);
+    font-variant: small-caps;
+
 }
 
 #contact h1 {
-    font-variant: small-caps;
     color: white;
     font-size: 4em;
     margin-bottom: 1em;
@@ -602,6 +603,7 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
 
 #contact .text-muted {
     color: darkgoldenrod;
+    font-size: 1.3em;
 }
 
 /*===================> Page Contact <====================*/
