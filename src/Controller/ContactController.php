@@ -72,7 +72,7 @@ class ContactController extends AbstractController
                             ->setPassword('EscapeMail');
                         $mailer = new Swift_Mailer($transport);
                         $message = new Swift_Message();
-                        $message->setSubject('Un message provenant de votre site Planète Mini Basket');
+                        $message->setSubject('Nouveau message du site Escape');
                         $message->setFrom([$cleanPost['email'] => 'sender name']);
                         $message->addTo('escape.game.projet2@gmail.com', 'recipient name');
                         $message->setBody("Nouveau message de ".$cleanPost['lastName']." ".$cleanPost['firstName']." 

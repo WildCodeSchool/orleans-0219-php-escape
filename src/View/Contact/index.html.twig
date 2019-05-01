@@ -2,23 +2,20 @@
 
 {% block content %}
 
-    <div id="contactUs"  class="container">
+    <section id="contactUs">
 
-        <section id="contactForm">
+        <div id="contactForm">
+    <div class="row justify-content-center">
 
-            {% if mailSent is not empty %}
+
+    {% if mailSent is not empty %}
                 <div class="mailSent">{{ mailSent }}</div>
             {% endif %}
             {% if mailNotSent is not empty %}
                 <div class="mailNotSent">{{ mailNotSent }}</div>
             {% endif %}
-            <div class="justify-content-center d-flex flex-nowrap p-b-50">
-                <img class="eventail-category" src="../assets/images/hire-japanese-culture.png" alt="éventail">
-                <h2>Envoyez un message :</h2>
-                <img class="eventail-category" src="../assets/images/hire-japanese-culture.png" alt="éventail">
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-sm-6 col-12">
+                <h2 class="text-light mt-3 text-center">Votre message :</h2>
+                <div class="col-md-8">
                     <form method="post" action="">
                         <div class="form-group">
                             <label for="lastName">Nom :</label>
@@ -48,11 +45,10 @@
                             {% endif %}
                             <textarea class="form-control" id="message" name="message" rows="10" required>{{ values.message }}</textarea>
                         </div>
-                        <button type="submit" class="btn btn-shinjuku">Envoyer</button>
+                        <button type="submit" class="btn btn-warning">Envoyer</button>
                     </form>
                 </div>
             </div>
-        </section>
 
         <section id="adress">
 
@@ -60,7 +56,7 @@
 
             <div class="row">
                 <div class="adresse col-lg-6">
-                    <h3>ESC'APE </br></h3>
+                    <h3>ESC'APE</h3>
                     384 rue des Moulins</br>
                     45750 Saint Pryvé Saint Mesmin</br>
                     Tél. <span>06 58 78 61 73</span>
@@ -70,7 +66,5 @@
                 </div>
             </div>
         </section>
-
-    </div>
 
 {% endblock content %}
