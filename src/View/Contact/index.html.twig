@@ -1,0 +1,41 @@
+{% extends '/layoutVisitor.html.twig' %}
+
+{% block content %}
+
+    <section id="contact">
+        <div class="container">
+
+            <h1>Contactez-nous</h1>
+
+            <form action="" class="contactUs">
+
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="name" class="text-muted">Votre nom est obligatoire</label>
+                        <input type="text" class="form-control" placeholder="Votre Nom">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="mail" class="text-muted">Votre Email est obligatoire</label>
+                        <input type="email" class="form-control" placeholder="Votre email">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="subject" class="text-muted">Quel est le sujet de votre message ?</label>
+                    <input type="text" class="form-control" placeholder="Le sujet">
+                </div>
+
+                <div class="form-row">
+                    <label for="message" class="text-muted">Quel est votre message? </label>
+                    <textarea name="message" class="form-control" id="message" cols="100" rows="7" placeholder="Votre message"></textarea>
+                </div>
+
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+{% endblock content %}
