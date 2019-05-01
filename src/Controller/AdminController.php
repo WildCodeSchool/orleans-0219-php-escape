@@ -74,4 +74,15 @@ class AdminController extends AbstractController
 
         return $this->twig->render('/Admin/add.html.twig');
     }
+    /**
+     * Handle mission deletion
+     *
+     * @param int $id
+     */
+    public function delete(int $id)
+    {
+        $missionManager = new missionManager();
+        $missionManager->delete($id);
+        header('Location:/Admin/index');
+    }
 }

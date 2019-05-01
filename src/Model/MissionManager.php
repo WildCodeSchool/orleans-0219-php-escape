@@ -26,7 +26,8 @@ class MissionManager extends AbstractManager
     {
         // prepared request
         $statement = $this->pdo->prepare("INSERT INTO $this->table (`title`, `level`, `subtitle`, `minplayers`,
- `maxplayers`, `description`, `image`) VALUES (:title, :level, :subtitle, :minplayers, :maxplayers, :description, :image)");
+ `maxplayers`, `description`, `image`) VALUES (:title, :level, :subtitle, :minplayers, :maxplayers, :description,
+  :image)");
         $statement->bindValue('title', $mission['title'], \PDO::PARAM_STR);
         $statement->bindValue('subtitle', $mission['subtitle'], \PDO::PARAM_STR);
         $statement->bindValue('minplayers', $mission['minplayers'], \PDO::PARAM_INT);
