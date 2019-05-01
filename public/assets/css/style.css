@@ -442,17 +442,17 @@ footer p a:hover {
     font-family: monospace;
     padding-bottom: 20vh;
     margin-bottom: -20vh;
-    margin-left: 5em;
-    margin-right: 8em;
+    margin-left: 7em;
+    margin-right: 7em;
+    position: relative;
+    padding-top: 9em;
+    background-color: rgba(17, 8, 2, 0.7);
+    z-index: 1;
     display: flex;
     text-align: center;
     flex-flow: row wrap;
     align-items: stretch;
     justify-content: space-between;
-    position: relative;
-    padding-top: 9em;
-    background-color: rgba(17, 8, 2, 0.7);
-    z-index: 1;
 }
 
 #missions .card-deck .card {
@@ -521,12 +521,53 @@ footer p a:hover {
 
 /* PAGE PRICE */
 
-#price h2, #price h3,h4, .student, .nav-link {
+#price {
+    padding-bottom: 30vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    position: relative;
+    padding-top: 20vh;
+    background-color: rgba(17, 8, 2, 0.6);
+    z-index: 1;
+}
+
+#price .alert {
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+#price .height {
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+#price #accordion {
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+#price .row {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#price h1 {
+    font-size: 4em;
+}
+
+#price h1, #price h3, #price h4, #price .student, #price .nav-link {
     color: white;
     font-family: "courier new";
+    font-variant: small-caps;
 }
 #price .student {
     font-style: italic;
+}
+
+#price .navbutton {
+    font-size: 1.3em;
+    text-shadow: 2px 1px 1px black;
 }
 
 #price table {
@@ -537,7 +578,7 @@ footer p a:hover {
     height: 250px;
 }
 
-#price td, th, .join {
+#price td, th, #price .join {
     color: black;
 }
 #price .height {
@@ -554,7 +595,7 @@ footer p a:hover {
 
 }
 #accordion .card-header {
-background-image: url("/assets/images/background-wood-board-parquet.webp")
+    background-image: url("/assets/images/background-wood-board-parquet.webp")
 }
 #accordion .card-body {
     background-color: rgba(63,119,8,0);
@@ -563,3 +604,5 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
     list-style: none;
     list-style-image: url("/assets/images/feuille.png");
 }
+
+/* PAGE PRICE */

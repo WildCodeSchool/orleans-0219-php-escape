@@ -1,166 +1,205 @@
 {% extends '/layoutVisitor.html.twig' %}
 
 {% block content %}
-    <section id="price" class="container space">
-        <div class="alert alert-warning text-center pb-3" role="alert">
-            <i class="fas fa-exclamation-triangle pr-5 mr-5"></i> Merci de vous présenter 15 minutes avant l'heure de votre réservation <i class="fas fa-exclamation-triangle pl-5 ml-5"></i>
-        </div>
-        <h2 class="text-center">Tarifs</h2>
-        <div class="height">
-        <nav>
-            <div class="nav nav-tabs justify-content-center my-3" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active navbutton px-5 text-success font-weight-bold" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> Heures Creuses</a>
-                <a class="nav-item nav-link navbutton px-5 text-success font-weight-bold" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> Heures Pleines</a>
-                <a class="nav-item nav-link navbutton px-5 text-success font-weight-bold" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="far fa-star"></i> Nautilus </a>
+    <section id="price">
+        <div class="container price">
+
+            <h1 class="text-center">Tarifs</h1>
+
+            <div class="alert alert-warning text-center my-5" role="alert">
+                <i class="fas fa-exclamation-triangle pr-5 mr-5"></i> Merci de vous présenter 15 minutes avant l'heure
+                de
+                votre réservation <i class="fas fa-exclamation-triangle pl-5 ml-5"></i>
             </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active text-center" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <h3>de 10h à 18h du lundi au vendredi inclus</h3>
-                <table class="table table-borderless table-hover my-3 bg-secondary">
-                    <thead>
-                    <tr>
-                        <th scope="col">Joueurs</th>
-                        <th scope="col">Prix</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>3 joueurs</td>
-                        <td>23€ par personne</td>
-                    </tr>
-                    <tr>
-                        <td>4 joueurs</td>
-                        <td>21€ par personne</td>
-                    </tr>
-                    <tr>
-                        <td>5 joueurs</td>
-                        <td>19€ par personne</td>
-                    </tr>
-                    <tr>
-                        <td>6 joueurs</td>
-                        <td>17€ par personne</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="tab-pane fade text-center" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                <h3>de 19h à 21h du lundi au jeudi, inclus de 19h à 22h le vendredi, de 10h à 22h en week-end</h3>
-                <table class="table table-borderless table-hover my-3 bg-secondary">
-                    <thead>
-                    <tr>
-                        <th scope="col">Joueurs</th>
-                        <th scope="col">Prix</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>3 joueurs</td>
-                        <td>27€ par personne</td>
-                    </tr>
-                    <tr>
-                        <td>4 joueurs</td>
-                        <td>25€ par personne</td>
-                    </tr>
-                    <tr>
-                        <td>5 joueurs</td>
-                        <td>23€ par personne</td>
-                    </tr>
-                    <tr>
-                        <td>6 joueurs</td>
-                        <td>21€ par personne</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="tab-pane fade text-center" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                <table class="table table-borderless table-hover my-3 bg-secondary">
-                    <thead>
-                    <tr>
-                        <th scope="col">Joueurs</th>
-                        <th scope="col">Prix</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>2 joueurs</td>
-                        <td>32€ par personne</td>
-                    </tr>
-                    <tr>
-                        <td>3 à 4 joueurs</td>
-                        <td>25€ par personne</td>
-                    </tr>
 
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="student text-center my-1">
-            <small>*Tarif étudiant : de 10h à 17h du lundi au vendredi inclus 4 joueurs min. :15 euros par joueur Sur présentation d’un justificatif</small>
-        </div>
-        </div>
-        <div class="row justify-content-center">
-<div class="col-md-5 btnmission text-center my-5 py-5">
-        <h4 class="join pt-4">N'attendez plus et rejoingnez-nous en réservant vos places dès maintenant</h4>
-        <div class="btn btn-lg btn-danger">Réserver <i class="fas fa-shopping-cart"></i></div>
-</div>
-        <div class="col-md-5 btnmission text-center my-5 py-5 ml-2">
-        <h4 class="join">Vous pouvez également consulter l'intégralité de nos missions pour trouver celle qui vous correspond le mieux</h4>
-        <div class="btn btn-lg btn-success">Missions</div>
-</div>
-        </div>
+            <div class="height">
+                <nav>
+                    <div class="nav nav-tabs justify-content-center my-3" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active navbutton px-5 text-warning font-weight-bold"
+                           id="nav-home-tab"
+                           data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                            Heures Creuses</a>
+                        <a class="nav-item nav-link navbutton px-5 text-warning font-weight-bold" id="nav-profile-tab"
+                           data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
+                           aria-selected="false"> Heures Pleines</a>
+                        <a class="nav-item nav-link navbutton px-5 text-warning font-weight-bold" id="nav-contact-tab"
+                           data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+                           aria-selected="false"><i class="far fa-star"></i> Nautilus </a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active text-center" id="nav-home" role="tabpanel"
+                         aria-labelledby="nav-home-tab">
+                        <h3>de 10h à 18h du lundi au vendredi inclus</h3>
+                        <table class="table table-borderless table-hover my-3 bg-secondary">
+                            <thead>
+                            <tr>
+                                <th scope="col">Joueurs</th>
+                                <th scope="col">Prix</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>3 joueurs</td>
+                                <td>23€ par personne</td>
+                            </tr>
+                            <tr>
+                                <td>4 joueurs</td>
+                                <td>21€ par personne</td>
+                            </tr>
+                            <tr>
+                                <td>5 joueurs</td>
+                                <td>19€ par personne</td>
+                            </tr>
+                            <tr>
+                                <td>6 joueurs</td>
+                                <td>17€ par personne</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade text-center" id="nav-profile" role="tabpanel"
+                         aria-labelledby="nav-profile-tab">
+                        <h3>de 19h à 21h du lundi au jeudi, inclus de 19h à 22h le vendredi, de 10h à 22h en
+                            week-end</h3>
+                        <table class="table table-borderless table-hover my-3 bg-secondary">
+                            <thead>
+                            <tr>
+                                <th scope="col">Joueurs</th>
+                                <th scope="col">Prix</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>3 joueurs</td>
+                                <td>27€ par personne</td>
+                            </tr>
+                            <tr>
+                                <td>4 joueurs</td>
+                                <td>25€ par personne</td>
+                            </tr>
+                            <tr>
+                                <td>5 joueurs</td>
+                                <td>23€ par personne</td>
+                            </tr>
+                            <tr>
+                                <td>6 joueurs</td>
+                                <td>21€ par personne</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade text-center" id="nav-contact" role="tabpanel"
+                         aria-labelledby="nav-contact-tab">
+                        <table class="table table-borderless table-hover my-3 bg-secondary">
+                            <thead>
+                            <tr>
+                                <th scope="col">Joueurs</th>
+                                <th scope="col">Prix</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>2 joueurs</td>
+                                <td>32€ par personne</td>
+                            </tr>
+                            <tr>
+                                <td>3 à 4 joueurs</td>
+                                <td>25€ par personne</td>
+                            </tr>
 
-        <div id="accordion" class="mt-5">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0 text-center text-dark">
-                        <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Evénement <i class="fas fa-gift"></i>
-                        </button>
-                    </h5>
-                </div>
-
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                        <p>Vous êtes à la recherche du cadeau hors normes pour une occasion absolument exceptionnelle ?</p>
-                        <p>Pour vos anniversaires, enterrements de vie de célibataire, fêtes de famille, départ en retraite ou toute autre occasion... nous avons LA solution qui fera de vous le héros aux idées incroyablement pertinentes :
-                            Notre Esc'ape box !</p>
-                        <p>Le concept : une session à emporter, toute ficelée, que vous pourrez mettre en œuvre très facilement chez vous, chez maman, sur votre lieu de travail, dans votre salle des fêtes, bref, où vous voulez.</p>
-
-                        <p>Vous ne trouvez pas la box de vos rêves ? Qu'à cela ne tienne, nous vous en créons une sur mesure.</p>
-
-                        <p>Alors ? Heureux ?</p>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0 text-center text-dark">
-                        <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Entreprise <i class="fas fa-briefcase"></i>
-                        </button>
-                    </h5>
+                <div class="student text-center my-1">
+                    <small>*Tarif étudiant : de 10h à 17h du lundi au vendredi inclus 4 joueurs min. :15 euros par
+                        joueur
+                        Sur présentation d’un justificatif
+                    </small>
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body">
-                        <p>Pour vous, professionnels, Esc’ape se met en quatre !</p>
-                        Vous pouvez compter sur nous pour l'organisation de :
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-5 btnmission text-center my-5 py-5">
+                    <h4 class="join pt-4">N'attendez plus et rejoingnez-nous en réservant vos places dès maintenant</h4>
+                    <div class="btn btn-lg btn-warning">Réserver <i class="fas fa-shopping-cart"></i></div>
+                </div>
+                <div class="col-md-5 btnmission text-center my-5 py-5 ml-2">
+                    <h4 class="join">Vous pouvez également consulter l'intégralité de nos missions pour trouver celle
+                        qui
+                        vous correspond le mieux</h4>
+                    <div class="btn btn-lg btn-warning">Missions</div>
+                </div>
+            </div>
 
-                        <ul>
-                            <li>vos séminaires et incentives</li>
-                            <li>vos réunions et formations</li>
-                            <li>vos sessions de recrutements</li>
-                            <li>vos cocktails et soirées clientèle</li>
-                        </ul>
-                        <p>Dans nos locaux à St Pryvé St Mesmin, tout est conçu pour allier réunions studieuses et détente, tout en mobilisant les compétences de vos collaborateurs, en renforçant la cohésion de vos équipes et en fluidifiant la communication et les échanges au sein de votre entreprise.</p>
+            <div id="accordion" class="mt-5">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0 text-center text-dark">
+                            <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Evénement <i class="fas fa-gift"></i>
+                            </button>
+                        </h5>
+                    </div>
 
-                        Nos atouts :
-                        <ul>
-                            <li>une salle de réunion équipée d’un vidéoprojecteur</li>
-                            <li>des activités ludiques variées pour agrémenter votre team building grâce à notre partenaire Le Beignet Doré Parc</li>
-                            <li>la possibilité d’organiser buffets, petits déj' ou cocktails</li>
-                        </ul>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Vous êtes à la recherche du cadeau hors normes pour une occasion absolument
+                                exceptionnelle
+                                ?</p>
+                            <p>Pour vos anniversaires, enterrements de vie de célibataire, fêtes de famille, départ en
+                                retraite ou toute autre occasion... nous avons LA solution qui fera de vous le héros aux
+                                idées incroyablement pertinentes :
+                                Notre Esc'ape box !</p>
+                            <p>Le concept : une session à emporter, toute ficelée, que vous pourrez mettre en œuvre très
+                                facilement chez vous, chez maman, sur votre lieu de travail, dans votre salle des fêtes,
+                                bref, où vous voulez.</p>
 
+                            <p>Vous ne trouvez pas la box de vos rêves ? Qu'à cela ne tienne, nous vous en créons une
+                                sur
+                                mesure.</p>
+
+                            <p>Alors ? Heureux ?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0 text-center text-dark">
+                            <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Entreprise <i class="fas fa-briefcase"></i>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Pour vous, professionnels, Esc’ape se met en quatre !</p>
+                            Vous pouvez compter sur nous pour l'organisation de :
+
+                            <ul>
+                                <li>vos séminaires et incentives</li>
+                                <li>vos réunions et formations</li>
+                                <li>vos sessions de recrutements</li>
+                                <li>vos cocktails et soirées clientèle</li>
+                            </ul>
+                            <p>Dans nos locaux à St Pryvé St Mesmin, tout est conçu pour allier réunions studieuses et
+                                détente, tout en mobilisant les compétences de vos collaborateurs, en renforçant la
+                                cohésion
+                                de vos équipes et en fluidifiant la communication et les échanges au sein de votre
+                                entreprise.</p>
+
+                            Nos atouts :
+                            <ul>
+                                <li>une salle de réunion équipée d’un vidéoprojecteur</li>
+                                <li>des activités ludiques variées pour agrémenter votre team building grâce à notre
+                                    partenaire Le Beignet Doré Parc
+                                </li>
+                                <li>la possibilité d’organiser buffets, petits déj' ou cocktails</li>
+                            </ul>
+
+                        </div>
                     </div>
                 </div>
             </div>
