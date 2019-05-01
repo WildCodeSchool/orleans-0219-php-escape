@@ -566,7 +566,9 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
 
 /*===================> Page Contact <====================*/
 
-#contact {
+/*-----------------> FORMULAIRE <----------------*/
+
+#contactUs {
     font-family: monospace;
     padding-bottom: 25vh;
     margin-bottom: -20vh;
@@ -585,25 +587,32 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
 
 }
 
-#contact h1 {
+#contactUs h1 {
     color: white;
     font-size: 4em;
     margin-bottom: 1em;
 }
 
-#contact .contactUs {
+#contactUs .contactForm {
     margin-left: 7em;
     margin-right: 7em;
 }
 
-#contact .form-row {
+#contactUs .form-row {
     margin-bottom: 1em;
     margin-top: 1em;
 }
 
-#contact .text-muted {
+#contactUs .text-muted {
     color: darkgoldenrod;
     font-size: 1.3em;
 }
 
+/*-----------------> FORMULAIRE <----------------*/
+
+/*-------------------> ADRESSE <-----------------*/
+/*-------------------> ADRESSE <-----------------*/
+
 /*===================> Page Contact <====================*/
+
+
