@@ -444,15 +444,15 @@ footer p a:hover {
     margin-bottom: -20vh;
     margin-left: 5em;
     margin-right: 8em;
+    padding-top: 9em;
+    z-index: 1;
     display: flex;
     text-align: center;
     flex-flow: row wrap;
     align-items: stretch;
     justify-content: space-between;
     position: relative;
-    padding-top: 9em;
     background-color: rgba(17, 8, 2, 0.7);
-    z-index: 1;
 }
 
 #missions .card-deck .card {
@@ -563,3 +563,35 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
     list-style: none;
     list-style-image: url("/assets/images/feuille.png");
 }
+
+/*=========================> PAGE FAQ <==========================*/
+
+#faq {
+    font-family: monospace;
+    padding-bottom: 25vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 9em;
+    z-index: 1;
+    position: relative;
+    background-color: rgba(17, 8, 2, 0.6);
+}
+
+#faq #accordion {
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+#faq h1 {
+    font-variant: small-caps;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+}
+
+#faq button {
+    font-variant: small-caps;
+}
+
+/*=========================> PAGE FAQ <==========================*/
