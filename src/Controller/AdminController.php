@@ -3,8 +3,7 @@
 
 namespace App\Controller;
 
-use App\Model\ItemManager;
-use App\Model\MissionsManager;
+use App\Model\MissionManager;
 
 class AdminController extends AbstractController
 {
@@ -17,12 +16,12 @@ class AdminController extends AbstractController
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function admin()
+    public function index()
     {
-        $missionsManager = new MissionsManager();
+        $missionsManager = new MissionManager();
         $missions = $missionsManager->selectAll();
 
-        return $this->twig->render('/Admin/admin.html.twig', ['missions' => $missions]);
+        return $this->twig->render('Admin/index.html.twig', ['missions' => $missions]);
     }
 
     /**
@@ -36,14 +35,22 @@ class AdminController extends AbstractController
      */
     public function edit(int $id): string
     {
-        $missionsManager = new MissionsManager();
-        $missions = $missionsManager->selectOneById($id);
+        $missionsManager = new MissionManager();
+        $mission = $missionsManager->selectOneById($id);
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mission['title'] = $_POST['title'];
-            $missionsManager->update($missions);
+            $mission['minplayers'] = $_POST['minplayers'];
+            $mission['maxplayers'] = $_POST['maxplayers'];
+            $mission['level'] = $_POST['level'];
+            $mission['subtitle'] = $_POST['subtitle'];
+            $mission['description'] = $_POST['description'];
+            $mission['image'] = $_POST['image'];
+
+            $missionsManager->update($mission);
+            header('location:/Admin/index');
         }
 
-        return $this->twig->render('Item/edit.html.twig', ['missions' => $missions]);
+        return $this->twig->render('Admin/edit.html.twig', ['mission' => $mission]);
     }
 }
