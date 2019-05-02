@@ -564,6 +564,110 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
     list-style-image: url("/assets/images/feuille.png");
 }
 
+/*===================> Page Contact <====================*/
+
+/*-----------------> FORMULAIRE <----------------*/
+
+#contactUs {
+    font-family: monospace;
+    padding-bottom: 25vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 10em;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgba(17, 8, 2, 0.6);
+}
+
+#contactUs h1 {
+    color: white;
+    font-size: 4em;
+    margin-bottom: 1em;
+    font-variant: small-caps;
+}
+
+#contactUs .contactForm {
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+#contactUs .form-row {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#contactUs label{
+    font-variant: small-caps;
+    color: grey;
+    font-size: 1.3em;
+}
+
+#contactUs a {
+    color: darkgoldenrod;
+    transition: ease 0.2s;
+}
+
+#contactUs a:hover {
+    color: #e9b122;
+    text-decoration: none;
+    text-shadow: 0 1px 5px rgba(255, 255, 255, 0.5);
+}
+
+/*-----------------> FORMULAIRE <----------------*/
+
+/*-------------------> ADRESSE <-----------------*/
+
+
+#contactUs #adress h2 {
+    font-variant: small-caps;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+#contactUs #adress {
+    margin-left: 7em;
+    margin-right: 7em;
+    width: 100%;
+}
+
+#contactUs #adress .row {
+    height: 20vw;
+}
+
+#contactUs #adress iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 3px 37px 21px rgba(214,201,214,0.24);
+    border: none;
+}
+
+#contactUs #adress .adresse {
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#contactUs #adress h3, #contactUs #adress span {
+    color: darkgoldenrod;
+}
+
+/*-------------------> ADRESSE <-----------------*/
+
+/*===================> Page Contact <====================*/
+
 /*====================> PageMissionIndi <=======================*/
 
 #missionPage {

@@ -1,0 +1,61 @@
+{% extends '/layoutVisitor.html.twig' %}
+
+{% block content %}
+
+    <div id="contactUs"  class="container">
+
+        <section id="contactForm">
+
+            <h1>Contactez-nous</h1>
+
+            <form action="" class="contactForm">
+
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="name">Votre nom est obligatoire</label>
+                        <input type="text" class="form-control" placeholder="Votre Nom">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="mail">Votre Email est obligatoire</label>
+                        <input type="email" class="form-control" placeholder="Votre email">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="subject">Quel est le sujet de votre message ? <span>(Pensez à vérifier la <a
+                                    href="/Faq/index">FAQ</a>)</span></label>
+                    <input type="text" class="form-control" placeholder="Le sujet">
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Quel est votre message? </label>
+                    <textarea name="message" class="form-control" id="message" cols="100" rows="7"
+                              placeholder="Votre message"></textarea>
+                </div>
+
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="adress">
+
+            <h2>Où nous trouver?</h2>
+
+            <div class="row">
+                <div class="adresse col-lg-6">
+                    <h3>ESC'APE </br></h3>
+                    384 rue des Moulins</br>
+                    45750 Saint Pryvé Saint Mesmin</br>
+                    Tél. <span>06 58 78 61 73</span>
+                </div>
+                <div class="map col-lg-6 ">
+                    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=1.8451237678527834%2C47.872244723522954%2C1.858566999435425%2C47.87869261274586&amp;layer=mapnik&amp;marker=47.87546876843124%2C1.851845383644104"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+{% endblock content %}
