@@ -537,7 +537,7 @@ footer p a:hover {
     height: 250px;
 }
 
-#price td, th, .join {
+#price td, #price th, .join {
     color: black;
 }
 #price .height {
@@ -564,18 +564,19 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
     list-style-image: url("/assets/images/feuille.png");
 }
 
-#editadmin label {
+#editadmin label, #addadmin label {
     color: white;
 }
-#editadmin form {
+#editadmin form, #addadmin form {
     max-width: 600px;
 }
-#editadmin {
+#editadmin, #addadmin {
     font-family: "courier new";
 }
-#editadmin img {
+#editadmin img, #addadmin img {
     max-width: 300px;
 }
+
 /*===================> Page Contact <====================*/
 
 /*-----------------> FORMULAIRE <----------------*/
@@ -864,3 +865,4 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
 }
 
 /*=====================> CGVU <===========================*/
+
