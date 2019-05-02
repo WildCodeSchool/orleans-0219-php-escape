@@ -564,6 +564,18 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
     list-style-image: url("/assets/images/feuille.png");
 }
 
+#editadmin label {
+    color: white;
+}
+#editadmin form {
+    max-width: 600px;
+}
+#editadmin {
+    font-family: "courier new";
+}
+#editadmin img {
+    max-width: 300px;
+}
 /*===================> Page Contact <====================*/
 
 /*-----------------> FORMULAIRE <----------------*/

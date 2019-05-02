@@ -18,7 +18,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ mission.title }}</h5>
                                 <div class="row">
-                                    <p class="card-text col">{{ mission.players }} </br> joueurs</p>
+                                    <p class="card-text col">{{ mission.minplayers }} à {{ mission.maxplayers }} </br> joueurs</p>
                                     <p class="card-text col">Difficulté: </br>
                                         {% for i in 1..5 %}
                                             <i class="fa{% if i > mission.level%}r{% else %}s{% endif %} fa-star"></i>
