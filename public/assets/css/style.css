@@ -1,11 +1,9 @@
 /*- ======================== BODY ========================= -*/
 
 body {
-    background-image: url("https://image.freepik.com/free-vector/exotic-pattern-with-tropical-leaves-dark-forest_43605-2958.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-color: #002905;
+    background-image: url('../images/background/xv.png');
     background-attachment: fixed;
-    background-color: #201004;
     scroll-behavior: smooth;
 }
 
@@ -39,7 +37,7 @@ h2 {
 #navbar .nav-link {
     color: darkgreen;
     margin-top: 0;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     margin-left: 0.5em;
 }
@@ -82,6 +80,10 @@ nav img{
     vertical-align: middle;
     border-radius: 30px 1px 1px 1px;
     margin-top: 1.5em;
+}
+
+#navbar .dropdown:hover>.dropdown-menu {
+    display: block;
 }
 
 /* ----- Elles sont necessaires pour l'instant -------> */
@@ -263,14 +265,14 @@ nav img{
     font-family: "boycott";
     font-style: normal;
     font-weight: normal;
-    src: url("/assets/fonts/BOYCOTT_.TTF");
+    src: url("../../assets/fonts/BOYCOTT_.TTF");
 
 }
 @font-face {
     font-family: "atype";
     font-style: normal;
     font-weight: normal;
-    src: url("/assets/fonts/ATypewriterForMe.ttf");
+    src: url("../../assets/fonts/ATypewriterForMe.ttf");
 
 }
 
@@ -356,7 +358,7 @@ opacity: 0;
 }
 
 #news .card:hover {
-    background-color: rgba(255, 255, 255);
+    background-color: white;
     color: #000;
 }
 
@@ -374,6 +376,8 @@ footer {
     background-position: top;
     background-repeat: no-repeat;
     max-height: 350px;
+    z-index: 2; /* Place le footer en premier plan */
+    position: relative; /* Active le z-index */
 }
 
 footer p {
@@ -410,19 +414,156 @@ footer p a:hover {
     filter: grayscale(0);
 }
 
-.space {
-    margin-top: 13em;
-    margin-bottom: 6em;
+/*===================> Page Mission <====================*/
+
+.checked {
+    color: orange;
 }
+
+#missions .card .card-img-top {
+    height: 20em;
+    transition: transform .2s, ease 0.2s;
+    overflow: hidden;
+    filter: grayscale(1);;
+}
+
+#missions .title {
+    font-variant: small-caps;
+    color: white;
+    font-size: 4em;
+}
+
+#missions {
+    font-family: monospace;
+    padding-bottom: 20vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    position: relative;
+    padding-top: 9em;
+    background-color: rgba(17, 8, 2, 0.6);
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+#missions .card-deck .card {
+    display: block;
+    max-width: 30em;
+    max-height: 35em;
+    text-align: center;
+    box-shadow: 4px 3px 5px 2px rgba(132, 132, 132, 0.59);
+    margin-top: 4em;
+    margin-bottom: 4em;
+    overflow: hidden;
+}
+
+#missions .card-deck .card-img-top:hover {
+    box-shadow: 4px 3px 5px 2px rgba(239, 239, 239, 0.59);
+    transform: scale(1.1);
+    filter: grayscale(0)
+}
+
+#missions .card-deck .card .card-img-overlay {
+    display: none;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#missions .card-deck .card:hover .card-img-overlay {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+#missions .card-body {
+    text-align: center;
+}
+
+#missions h5 {
+    color: black;
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+#missions p {
+    font-size: 0.8em;
+}
+
+#missions .row {
+    display: flex;
+}
+
+#missions .fas {
+    color: darkgoldenrod;
+}
+
+#missions .card-img {
+    overflow: hidden;
+}
+
+#missions .btn {
+    bottom : 1em;
+    left: auto;
+}
+
+#missions .card-text {
+    font-size: 12pt;
+}
+/*===================> Page Mission <====================*/
 
 /* PAGE PRICE */
 
-#price h2, #price h3,h4, .student, .nav-link {
+#price {
+    padding-bottom: 30vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    position: relative;
+    padding-top: 20vh;
+    background-color: rgba(17, 8, 2, 0.6);
+    z-index: 1;
+}
+
+#price .alert {
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+#price .height {
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+#price #accordion {
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+#price .row {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#price h1 {
+    font-size: 4em;
+}
+
+#price h1, #price h3, #price h4, #price .student, #price .nav-link {
     color: white;
     font-family: "courier new";
+    font-variant: small-caps;
 }
 #price .student {
     font-style: italic;
+}
+
+#price .navbutton {
+    font-size: 1.3em;
+    text-shadow: 2px 1px 1px black;
 }
 
 #price table {
@@ -433,7 +574,7 @@ footer p a:hover {
     height: 250px;
 }
 
-#price td, th, .join {
+#price td, #price th, #price .join {
     color: black;
 }
 #price .height {
@@ -445,3 +586,363 @@ footer p a:hover {
 #price table, .btnmission {
     border-radius: 5px;
 }
+#accordion .card-body, #accordion .card-header{
+    font-family: "courier new";
+
+}
+#accordion .card-header {
+    background-image: url("/assets/images/background-wood-board-parquet.webp")
+}
+#accordion .card-body {
+    background-color: rgba(63,119,8,0);
+}
+#accordion ul {
+    list-style: none;
+    list-style-image: url("/assets/images/feuille.png");
+}
+
+/* PAGE PRICE */
+
+/*=========================> PAGE FAQ <==========================*/
+
+#faq {
+    font-family: monospace;
+    padding-bottom: 25vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 10em;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgba(17, 8, 2, 0.6);
+}
+
+
+#faq #accordion {
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+#faq h1 {
+    font-variant: small-caps;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+}
+
+#faq button {
+    font-variant: small-caps;
+}
+
+/*=========================> PAGE FAQ <==========================*/
+
+/*=========================> ADMIN <==========================*/
+
+#editadmin label, #addadmin label {
+    color: white;
+}
+#editadmin form, #addadmin form {
+    max-width: 600px;
+}
+#editadmin, #addadmin {
+    font-family: "courier new";
+}
+#editadmin img, #addadmin img {
+    max-width: 300px;
+}
+
+/*=========================> ADMIN <==========================*/
+
+/*===================> Page Contact <====================*/
+
+/*-----------------> FORMULAIRE <----------------*/
+
+#contactUs {
+    font-family: monospace;
+    padding-bottom: 25vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 10em;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgba(17, 8, 2, 0.6);
+}
+
+#contactUs h1 {
+    color: white;
+    font-size: 4em;
+    margin-bottom: 1em;
+    font-variant: small-caps;
+}
+
+#contactUs .contactForm {
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+#contactUs .form-row {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#contactUs label{
+    font-variant: small-caps;
+    color: grey;
+    font-size: 1.3em;
+}
+
+#contactUs a {
+    color: darkgoldenrod;
+    transition: ease 0.2s;
+}
+
+#contactUs a:hover {
+    color: #e9b122;
+    text-decoration: none;
+    text-shadow: 0 1px 5px rgba(255, 255, 255, 0.5);
+}
+
+/*-----------------> FORMULAIRE <----------------*/
+
+/*-------------------> ADRESSE <-----------------*/
+
+
+#contactUs #adress h2 {
+    font-variant: small-caps;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+#contactUs #adress {
+    margin-left: 7em;
+    margin-right: 7em;
+    width: 100%;
+}
+
+#contactUs #adress .row {
+    height: 20vw;
+}
+
+#contactUs #adress iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 3px 37px 21px rgba(214,201,214,0.24);
+    border: none;
+}
+
+#contactUs #adress .adresse {
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#contactUs #adress h3, #contactUs #adress span {
+    color: darkgoldenrod;
+}
+
+/*-------------------> ADRESSE <-----------------*/
+
+/*===================> Page Contact <====================*/
+
+/*====================> PageMissionIndi <=======================*/
+
+#missionPage {
+    text-align: center;
+    font-family: monospace;
+    color: white;
+    background-color: rgba(17, 8, 2, 0.6);
+    padding-bottom: 17vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 7em;
+    z-index: 1;
+}
+
+#missionPage .fas {
+    color: black;
+}
+
+#missionPage .title, .description {
+    margin: 4em;
+}
+
+#missionPage h1 {
+    font-variant: small-caps;
+    margin-bottom: 0.5em;
+    font-size: 5vw;
+}
+
+#missionPage h2 {
+    font-variant: small-caps;
+    font-size: 2.5vw;
+}
+
+#missionPage h5 {
+    color: black;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+
+#missionPage h3 {
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+#missionPage .description p {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+#missionPage .card-img-overlay:hover h5 {
+    color: white;
+}
+
+#missionPage .card-img-overlay:hover .fas {
+    color: transparent;
+}
+
+#missionPage .btn-warning {
+    margin: 1.5em;
+    padding: 0;
+    font-size: 1.5em;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+#missionPage .btnHide {
+    display: none;
+    padding: 0.5em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#missionPage .btn1 {
+    margin-top: 2em;
+    padding: 0.5em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.mission .card-img {
+    height: 30em;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.mission .card-img-overlay {
+    color: black;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.5);
+    vertical-align: middle;
+    display: grid;
+}
+
+.mission .card-img-overlay:hover {
+    background-color: transparent;
+}
+
+.mission .card-img-overlay:hover p {
+    color: transparent;
+}
+
+.mission .card-img-overlay:hover .checked {
+    display: none;
+}
+
+@media screen and (max-width: 490px) {
+    #missionPage {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #missionPage .description{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    #missionPage .description p {
+        text-align: left;
+    }
+}
+
+/*====================> PageMissionIndi <=======================*/
+
+/*=====================> Mentions <===========================*/
+
+#mention {
+    color: white;
+    background-color: rgba(32, 16, 4, 0.5);
+    padding-bottom: 20vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 9em;
+    z-index: 1;
+}
+
+#mention h1, h2 {
+    font-family: monospace;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#mention h1 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#mention h2 {
+    font-size: 1.9em;
+}
+
+/*=====================> Mentions <===========================*/
+
+/*=====================> CGVU <===========================*/
+
+#cgvu {
+    color: white;
+    background-color: rgba(32, 16, 4, 0.5);
+    padding-bottom: 20vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 9em;
+    z-index: 1;
+}
+
+#cgvu h1, h2 {
+    font-family: monospace;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#cgvu h1 {
+    text-decoration: underline;
+}
+
+#cgvu h2 {
+    font-size: 1.9em;
+}
+
+/*=====================> CGVU <===========================*/

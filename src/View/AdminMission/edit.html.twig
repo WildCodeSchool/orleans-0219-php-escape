@@ -1,0 +1,44 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+<section id="editadmin">
+    <h1 class="py-3 text-center text-light"> Editez vos missions</h1>
+<form method="post" class="container py-5 text-center">
+    <div class="form-group">
+        <label class="text-warning" for="title">Choisissez un titre</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input" name="title" value="{{ mission.title }}">
+    </div>
+    <div class="form-group">
+        <label class="text-warning" for="subtitle">Choisissez un sous-titre</label>
+        <input type="text" class="form-control" id="subtitle" placeholder="Example input" name="subtitle" value="{{ mission.subtitle }}">
+    </div>
+    <div class="form-group">
+        <label class="text-warning" for="players">Choissisez le nombre de joueurs</label>
+        <div class="row justify-content-center">
+            <p class="text-center text-light mx-3 pt-2"> de </p>
+        <input type="text" class="form-control col-md-1 text-center" id="formGroupExampleInput2" placeholder="Another input" name="minplayers" value="{{ mission.minplayers }}" >
+            <p class="text-center text-light mx-3 pt-2"> à </p>
+        <input type="text" class="form-control col-md-1 pl-2 text-center" id="formGroupExampleInput2" placeholder="Another input" name="maxplayers" value="{{ mission.maxplayers }}" >
+            <p class="text-center text-light mx-3 pt-2"> joueurs </p>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="text-warning" for="level">Choisissez un niveau de difficulté</label>
+        <input type="text" class="form-control" id="level" placeholder="Example input" name="level" value="{{ mission.level }}">
+    </div>
+    <div class="form-group">
+        <label class="text-warning" for="image">Ajoutez une image</label></br>
+        <img src="/assets/images/missions/{{ mission.image }}" class="py-4">
+        <input type="text" class="form-control" id="image" placeholder="Example input" name="image" value="{{ mission.image }}">
+    </div>
+    <div class="form-group">
+        <label for="description" class="text-warning">Votre description</label>
+        <textarea class="form-control" id="description" rows="7" name="description">{{ mission.description }}</textarea>
+    </div>
+
+    <div class="text-center mb-5">
+    <button type="submit" class="btn btn-warning">Valider les modifications</button>
+    </div>
+</form>
+    </section>
+{% endblock %}

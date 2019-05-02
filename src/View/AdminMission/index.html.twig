@@ -1,0 +1,27 @@
+{% extends 'layout.html.twig' %}
+
+{% block header %}
+    {% include '/AdminMission/_navbarAdmin.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% include '/AdminMission/_contentAdmin.html.twig' %}
+    </div>
+
+{% endblock %}
+
+{% block javascript %}
+<script>
+let forms = document.getElementsByClassName("deleteForm");
+for (i=0; i<forms.length; i++) {
+forms[i].onsubmit = function () {
+        if (confirm("êtes vous sûr de vouloir supprimer la mission ?")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+</script>
+{% endblock %}
