@@ -8,6 +8,7 @@
             <th scope="col">Niveau</th>
             <th scope="col">Nombre de joueurs</th>
             <th scope="col">Editer la mission</th>
+            <th scope="col">Supprimer la mission</th>
         </tr>
         </thead>
         <tbody>
@@ -18,6 +19,12 @@
                 <td>{{ mission.level }}</td>
                 <td>de {{ mission.minplayers }} à {{ mission.maxplayers }} joueurs</td>
                 <td><a class="edit text-warning" href="/AdminMission/edit/{{ mission.id }}"><i class="fas fa-edit"></i></a></td>
+                <td>
+                <form action="/AdminMission/delete/{{ mission.id }}" method="POST" class="deleteForm">
+                    <button class="edit text-warning bg-transparent border-0" href="/AdminMission/delete/"><i class="far fa-trash-alt"></i></button>
+                </form>
+                </td>
+
             </tr>
         {% endfor %}
         </tbody>
