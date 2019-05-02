@@ -10,15 +10,16 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link" href="/#news">News</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="/Mission/index" id="navbarDropdownMenuLink" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Missions
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/Mission/index">Toutes les missions</a>
                         {% for mission in missions %}
-                        <a class="dropdown-item" href="#">{{ mission.title }}</a>
+                        <a class="dropdown-item" href="/Mission/show/{{ mission.id }}">{{ mission.title }}</a>
                         {% endfor %}
                     </div>
                 </li>
@@ -29,7 +30,7 @@
                     <a class="nav-link" href="/Faq/index">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ContactUs</a>
+                    <a class="nav-link" href="/Contact/index">ContactUs</a>
                 </li>
             </ul>
         </div>

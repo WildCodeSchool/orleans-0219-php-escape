@@ -1,9 +1,5 @@
 {% extends '/layoutVisitor.html.twig' %}
 
-{% block stylesheet %}
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-{% endblock %}
-
 {% block content %}
     <section id="missions">
         <div class="container">
@@ -15,14 +11,14 @@
                     <div class="col-lg-6 d-flex justify-content-center">
                         <div class="card m-4">
                             <div class="card-img">
-                                <a href="#"><img
+                                <a href="/Mission/show/{{ mission.id }}"><img
                                             src="/assets/images/missions/{{ mission.image }}"
                                             class="card-img-top" alt="{{ mission.title }}"></a>
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">{{ mission.title }}</h5>
                                 <div class="row">
-                                    <p class="card-text col">{{ mission.players }} </br> joueurs</p>
+                                    <p class="card-text col">{{ mission.minplayers }} à {{ mission.maxplayers }} </br> joueurs</p>
                                     <p class="card-text col">Difficulté: </br>
                                         {% for i in 1..5 %}
                                             <i class="fa{% if i > mission.level%}r{% else %}s{% endif %} fa-star"></i>
