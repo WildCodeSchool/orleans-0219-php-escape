@@ -20,7 +20,7 @@
                 <td>de {{ mission.minplayers }} à {{ mission.maxplayers }} joueurs</td>
                 <td><a class="edit text-warning" href="/AdminMission/edit/{{ mission.id }}"><i class="fas fa-edit"></i></a></td>
                 <td>
-                <form action="/AdminMission/delete/{{ mission.id }}" method="POST">
+                <form action="/AdminMission/delete/{{ mission.id }}" method="POST" class="deleteForm">
                     <button class="edit text-warning bg-transparent border-0" href="/AdminMission/delete/"><i class="far fa-trash-alt"></i></button>
                 </form>
                 </td>

@@ -87,7 +87,6 @@ class AdminMissionController extends AbstractController
             $missionManager->delete($id);
             header('Location:/AdminMission/index');
             exit();
-
         }
     }
 }
