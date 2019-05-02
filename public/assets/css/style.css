@@ -687,8 +687,9 @@ footer p a:hover {
 }
 
 #contactUs .contactForm {
-    margin-left: 7em;
+    margin-left: 8em;
     margin-right: 7em;
+    width: 100%;
 }
 
 #contactUs .form-row {
