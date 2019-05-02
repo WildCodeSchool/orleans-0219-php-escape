@@ -17,8 +17,7 @@
                 <td><a href="" class="text-warning">{{ mission.title }}</a></td>
                 <td>{{ mission.level }}</td>
                 <td>de {{ mission.minplayers }} à {{ mission.maxplayers }} joueurs</td>
-                <td><a class="edit text-warning" href="/Admin/edit/{{ mission.id }}"><i class="fas fa-edit"></i></a></td>
-                <td><a href="/AdminMission/edit/{{ mission.id }}"><i class="fas fa-edit"></i></a></td>
+                <td><a class="edit text-warning" href="/AdminMission/edit/{{ mission.id }}"><i class="fas fa-edit"></i></a></td>
             </tr>
         {% endfor %}
         </tbody>
