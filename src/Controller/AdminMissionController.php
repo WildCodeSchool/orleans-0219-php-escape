@@ -74,6 +74,7 @@ class AdminMissionController extends AbstractController
 
         return $this->twig->render('/AdminMission/add.html.twig');
     }
+
     /**
      * Handle mission deletion
      *
@@ -81,8 +82,12 @@ class AdminMissionController extends AbstractController
      */
     public function delete(int $id)
     {
-        $missionManager = new missionManager();
-        $missionManager->delete($id);
-        header('Location:/AdminMission/index');
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $missionManager = new missionManager();
+            $missionManager->delete($id);
+            header('Location:/AdminMission/index');
+            exit();
+
+        }
     }
 }
