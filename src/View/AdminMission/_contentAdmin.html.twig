@@ -1,5 +1,5 @@
 <div class="row justify-content-center text-center">
-    <a class="btn btn-warning mb-3" href="/Admin/add" role="button">Ajoutez une nouvelle mission</a>
+    <a class="btn btn-warning mb-3" href="/AdminMission/add" role="button">Ajoutez une nouvelle mission</a>
     <table class="table text-light">
         <thead>
         <tr>
@@ -18,8 +18,9 @@
                 <td><a href="" class="text-warning">{{ mission.title }}</a></td>
                 <td>{{ mission.level }}</td>
                 <td>de {{ mission.minplayers }} à {{ mission.maxplayers }} joueurs</td>
-                <td><a class="edit text-warning" href="/Admin/edit/{{ mission.id }}"><i class="fas fa-edit"></i></a></td>
-                <td><a class="edit text-warning" href="/Admin/delete/{{ mission.id }}"><i class="far fa-trash-alt"></i></a></td>
+                <td><a class="edit text-warning" href="/AdminMission/edit/{{ mission.id }}"><i class="fas fa-edit"></i></a></td>
+                <td><a class="edit text-warning" href="/AdminMission/delete/{{ mission.id }}"><i class="far fa-trash-alt"></i></a></td>
+
             </tr>
         {% endfor %}
         </tbody>
