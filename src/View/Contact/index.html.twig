@@ -2,42 +2,53 @@
 
 {% block content %}
 
-    <div id="contactUs"  class="container">
+    <section id="contactUs">
 
-        <section id="contactForm">
+        <div id="contactForm">
+    <div class="row justify-content-center">
 
-            <h1>Contactez-nous</h1>
 
-            <form action="" class="contactForm">
-
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <label for="name">Votre nom est obligatoire</label>
-                        <input type="text" class="form-control" placeholder="Votre Nom">
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <label for="mail">Votre Email est obligatoire</label>
-                        <input type="email" class="form-control" placeholder="Votre email">
-                    </div>
+    {% if mailSent is not empty %}
+                <div class="mailSent">{{ mailSent }}</div>
+            {% endif %}
+            {% if mailNotSent is not empty %}
+                <div class="mailNotSent">{{ mailNotSent }}</div>
+            {% endif %}
+                <h2 class="text-light mt-3 text-center">Votre message :</h2>
+                <div class="col-md-8">
+                    <form method="post" action="">
+                        <div class="form-group">
+                            <label for="lastName">Nom :</label>
+                            {% if errors.lastName is defined %}
+                                <div class="formErrors">{{ errors.lastName }}</div>
+                            {% endif %}
+                            <input type="text" name="lastName" class="form-control" id="lastName" value="{{ values.lastName }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName">Prénom :</label>
+                            {% if errors.firstName is defined %}
+                                <div class="formErrors">{{ errors.firstName }}</div>
+                            {% endif %}
+                            <input type="text" name="firstName" class="form-control" id="firstName" value="{{ values.firstName }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail :</label>
+                            {% if errors.email is defined %}
+                                <div class="formErrors">{{ errors.email }}</div>
+                            {% endif %}
+                            <input type="email" name="email" class="form-control" id="email" value="{{ values.email }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message :</label>
+                            {% if errors.message is defined %}
+                                <div class="formErrors">{{ errors.message }}</div>
+                            {% endif %}
+                            <textarea class="form-control" id="message" name="message" rows="10" required>{{ values.message }}</textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Envoyer</button>
+                    </form>
                 </div>
-
-                <div class="form-row">
-                    <label for="subject">Quel est le sujet de votre message ? <span>(Pensez à vérifier la <a
-                                    href="/Faq/index">FAQ</a>)</span></label>
-                    <input type="text" class="form-control" placeholder="Le sujet">
-                </div>
-
-                <div class="form-row">
-                    <label for="message">Quel est votre message? </label>
-                    <textarea name="message" class="form-control" id="message" cols="100" rows="7"
-                              placeholder="Votre message"></textarea>
-                </div>
-
-                <div class="col-auto my-1">
-                    <button type="submit" class="btn btn-warning">Submit</button>
-                </div>
-            </form>
-        </section>
+            </div>
 
         <section id="adress">
 
@@ -45,7 +56,7 @@
 
             <div class="row">
                 <div class="adresse col-lg-6">
-                    <h3>ESC'APE </br></h3>
+                    <h3>ESC'APE</h3>
                     384 rue des Moulins</br>
                     45750 Saint Pryvé Saint Mesmin</br>
                     Tél. <span>06 58 78 61 73</span>
@@ -55,7 +66,5 @@
                 </div>
             </div>
         </section>
-
-    </div>
 
 {% endblock content %}
