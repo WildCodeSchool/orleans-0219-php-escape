@@ -452,7 +452,7 @@ footer p a:hover {
     align-items: stretch;
     justify-content: space-between;
     position: relative;
-    background-color: rgba(17, 8, 2, 0.6);
+    background-color: rgba(17, 8, 2, 0.7);
 }
 
 #missions .card-deck .card {
@@ -668,4 +668,187 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
 
 /*===================> Page Contact <====================*/
 
+/*====================> PageMissionIndi <=======================*/
 
+#missionPage {
+    text-align: center;
+    font-family: monospace;
+    color: white;
+    background-color: rgba(17, 8, 2, 0.6);
+    padding-bottom: 17vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 7em;
+    z-index: 1;
+}
+
+#missionPage .fas {
+    color: black;
+}
+
+#missionPage .title, .description {
+    margin: 4em;
+}
+
+#missionPage h1 {
+    font-variant: small-caps;
+    margin-bottom: 0.5em;
+    font-size: 5vw;
+}
+
+#missionPage h2 {
+    font-variant: small-caps;
+    font-size: 2.5vw;
+}
+
+#missionPage h5 {
+    color: black;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+
+#missionPage h3 {
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+#missionPage .description p {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+#missionPage .card-img-overlay:hover h5 {
+    color: white;
+}
+
+#missionPage .card-img-overlay:hover .fas {
+    color: transparent;
+}
+
+#missionPage .btn-warning {
+    margin: 1.5em;
+    padding: 0;
+    font-size: 1.5em;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+#missionPage .btnHide {
+    display: none;
+    padding: 0.5em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#missionPage .btn1 {
+    margin-top: 2em;
+    padding: 0.5em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.mission .card-img {
+    height: 30em;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.mission .card-img-overlay {
+    color: black;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.5);
+    vertical-align: middle;
+    display: grid;
+}
+
+.mission .card-img-overlay:hover {
+    background-color: transparent;
+}
+
+.mission .card-img-overlay:hover p {
+    color: transparent;
+}
+
+.mission .card-img-overlay:hover .checked {
+    display: none;
+}
+
+@media screen and (max-width: 490px) {
+    #missionPage {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #missionPage .description{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    #missionPage .description p {
+        text-align: left;
+    }
+}
+
+/*====================> PageMissionIndi <=======================*/
+
+/*=====================> Mentions <===========================*/
+
+#mention {
+    color: white;
+    background-color: rgba(32, 16, 4, 0.5);
+    padding-bottom: 20vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 9em;
+    z-index: 1;
+}
+
+#mention h1, h2 {
+    font-family: monospace;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#mention h1 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#mention h2 {
+    font-size: 1.9em;
+}
+
+/*=====================> Mentions <===========================*/
+
+/*=====================> CGVU <===========================*/
+
+#cgvu {
+    color: white;
+    background-color: rgba(32, 16, 4, 0.5);
+    padding-bottom: 20vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 9em;
+    z-index: 1;
+}
+
+#cgvu h1, h2 {
+    font-family: monospace;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#cgvu h1 {
+    text-decoration: underline;
+}
+
+#cgvu h2 {
+    font-size: 1.9em;
+}
+
+/*=====================> CGVU <===========================*/
