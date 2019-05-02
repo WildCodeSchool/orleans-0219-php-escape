@@ -5,7 +5,7 @@ namespace App\Controller;
 
 use App\Model\MissionManager;
 
-class AdminController extends AbstractController
+class AdminMissionController extends AbstractController
 {
 
     /**
@@ -21,7 +21,7 @@ class AdminController extends AbstractController
         $missionsManager = new MissionManager();
         $missions = $missionsManager->selectAll();
 
-        return $this->twig->render('Admin/index.html.twig', ['missions' => $missions]);
+        return $this->twig->render('AdminMission/index.html.twig', ['missions' => $missions]);
     }
 
     /**
@@ -48,10 +48,10 @@ class AdminController extends AbstractController
             $mission['image'] = $_POST['image'];
 
             $missionsManager->update($mission);
-            header('location:/Admin/index');
+            header('location:/AdminMission/index');
         }
 
-        return $this->twig->render('Admin/edit.html.twig', ['mission' => $mission]);
+        return $this->twig->render('AdminMission/edit.html.twig', ['mission' => $mission]);
     }
 
     public function add()
@@ -69,9 +69,9 @@ class AdminController extends AbstractController
                 'image' => $_POST['image'],
             ];
             $missionManager->insert($mission);
-            header('Location:/admin/index');
+            header('Location:/adminMission/index');
         }
 
-        return $this->twig->render('/Admin/add.html.twig');
+        return $this->twig->render('/AdminMission/add.html.twig');
     }
 }
