@@ -5,7 +5,7 @@ namespace App\Controller;
 
 use App\Model\MissionManager;
 
-class AdminController extends AbstractController
+class AdminMissionController extends AbstractController
 {
 
     /**
