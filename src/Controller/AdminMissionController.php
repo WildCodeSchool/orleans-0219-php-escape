@@ -53,4 +53,25 @@ class AdminMissionController extends AbstractController
 
         return $this->twig->render('AdminMission/edit.html.twig', ['mission' => $mission]);
     }
+
+    public function add()
+    {
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $missionManager = new missionManager();
+            $mission = [
+                'title' => $_POST['title'],
+                'minplayers' => $_POST['minplayers'],
+                'maxplayers' => $_POST['maxplayers'],
+                'level' => $_POST['level'],
+                'subtitle' => $_POST['subtitle'],
+                'description' => $_POST['description'],
+                'image' => $_POST['image'],
+            ];
+            $missionManager->insert($mission);
+            header('Location:/adminMission/index');
+        }
+
+        return $this->twig->render('/AdminMission/add.html.twig');
+    }
 }

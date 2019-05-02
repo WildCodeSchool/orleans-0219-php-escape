@@ -537,7 +537,7 @@ footer p a:hover {
     height: 250px;
 }
 
-#price td, th, .join {
+#price td, #price th, .join {
     color: black;
 }
 #price .height {
@@ -563,7 +563,6 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
     list-style: none;
     list-style-image: url("/assets/images/feuille.png");
 }
-
 
 /*=========================> PAGE FAQ <==========================*/
 
@@ -605,16 +604,16 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
 
 /*=========================> ADMIN <==========================*/
 
-#editadmin label {
+#editadmin label, #addadmin label {
     color: white;
 }
-#editadmin form {
+#editadmin form, #addadmin form {
     max-width: 600px;
 }
-#editadmin {
+#editadmin, #addadmin {
     font-family: "courier new";
 }
-#editadmin img {
+#editadmin img, #addadmin img {
     max-width: 300px;
 }
 
@@ -908,3 +907,4 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
 }
 
 /*=====================> CGVU <===========================*/
+
