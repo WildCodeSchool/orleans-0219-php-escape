@@ -1,0 +1,324 @@
+{% extends 'layoutVisitor.html.twig' %}
+
+    {% block content %}
+        <section id="faq">
+            <div class="container">
+
+                <h1>Notre Foire aux Questions</h1>
+
+                <div id="accordion" class="mt-5 mt-5" xmlns="http://www.w3.org/1999/html">
+                    <div class="card">
+                        <div class="card-header" id="heading1">
+                            <h5 class="mb-0 text-center text-dark">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                        data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    Esc'Ape, qu'est ce que c'est? <i class="fas fa-gift"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>C’est un jeu dont le principe est simple : vous êtes enfermés avec vos équipiers
+                                        dans une salle. Votre objectif est de réussir à en sortir en moins de 60
+                                        minutes.
+                                    </li>
+                                    <li>Comment ? En venant à bout de nombreux défis et énigmes, qui vous permettront de
+                                        tester votre logique et votre réflexion et nécessiteront communication et
+                                        travail
+                                        d’équipe.
+                                    </li>
+                                    <li>Vous devrez rechercher des indices dont chacun vous rapprochera un peu plus de
+                                        la
+                                        liberté.
+                                    </li>
+                                    <li>Un vrai défi à relever ! C’est le divertissement idéal pour les groupes d’amis,
+                                        les
+                                        familles et les collègues de travail.
+                                    </li>
+                                    <li>Plusieurs groupes peuvent jouer simultanément et s’affronter. Des aménagement
+                                        spécifiques personnalisés peuvent vous être proposés.
+                                    </li>
+                                    <li>N’hésitez pas à nous contacter.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading2">
+                            <h5 class="mb-0 text-center text-dark">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                        data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    Quelle est la taille des équipes? <i class="fas fa-briefcase"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>Comme vous voulez !</li>
+                                    <li>Les salles sont conçues pour recevoir des équipes de 3 à 6 personnes.</li>
+                                    <li>Nous déconseillons de jouer à 2 car nous pensons que le jeu devient trop
+                                        difficile.
+                                        Cependant, si vous vous sentez à la hauteur, vous pouvez réserver pour un groupe
+                                        de
+                                        3 et venir à deux !
+                                    </li>
+                                    <li>Si vous êtes plus nombreux, réservez plusieurs salles…</li>
+                                    <li>Et si vous êtes vraiment très nombreux (entreprise, anniversaire, enterrement de
+                                        vie
+                                        de garçon ou fille…), nous pouvons privatiser le lieu ou même vous proposer la
+                                        version Esc’ape Box pour une session à domicile ou sur votre lieu de travail :
+                                        envoyez-nous un email à contact@esc-ape.fr ou utilisez notre formulaire de
+                                        contact
+                                        et nous vous répondrons dans les plus brefs délais.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading3">
+                            <h5 class="mb-0 text-center text-dark">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                        data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    Je suis claustrophobe, puis-je jouer quand même?<i class="fas fa-gift"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+                            <div class="card-body">
+                                Bien sûr ! </br>
+                                Si vous le souhaitez, nous pouvons laisser la porte déverrouillée.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading4">
+                            <h5 class="mb-0 text-center text-dark">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                        data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    Pouvons-nous jouer deux équipes l'une contre l'autre? <i
+                                            class="fas fa-briefcase"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+                            <div class="card-body">
+                                Lancez-vous des défis entre amis ! </br>
+                                Esc’ape propose le même jeu dans des salles différentes. Il vous suffit de réserver deux
+                                salles proposant le même jeu à la même heure. N’hésitez pas à nous contacter pour en
+                                savoir
+                                plus !
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading5">
+                            <h5 class="mb-0 text-center text-dark">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                        data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                    Quel équipement pour jouer? <i class="fas fa-gift"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+                            <div class="card-body">
+                                Vous n’avez besoin de rien en particulier pour jouer. </br>
+                                Néanmoins, si vous le souhaitez, vous pouvez venir déguisés en accord avec le thème de
+                                la
+                                pièce ! Une photo immortalisera ce moment à votre sortie.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading6">
+                            <h5 class="mb-0 text-center text-dark">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                        data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    Combien ça coûte? <i class="fas fa-briefcase"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
+                            <div class="card-body">
+                                <p> Les prix varient selon le moment, votre situation et le nombre de participants :</p>
+
+                                <p>Tarif étudiant : de 10h à 17h du lundi au vendredi inclus
+                                    4 joueurs min. :15 euros par joueur sur présentation de votre carte
+                                    d’étudiant </br></p>
+                                </br>
+                                <p>Heures creuses : de 10h à 18h du lundi au vendredi inclus</p>
+                                <ul>
+                                    <li>3 joueurs : 23 euros par joueur</li>
+                                    <li>4 joueurs : 21 euros par joueur</li>
+                                    <li>5 joueurs : 19 euros par joueur</li>
+                                    <li>6 joueurs : 17 euros par joueur</li>
+                                </ul>
+                                <p>Heures pleines : de 19h à 21h du lundi au jeudi inclus, de 19h à 22h le vendredi de
+                                    10h à
+                                    22h en week-end</p>
+                                <ul>
+                                    <li>3 joueurs : 27 euros par joueur</li>
+                                    <li>4 joueurs : 25 euros par joueur</li>
+                                    <li>5 joueurs : 23 euros par joueur</li>
+                                    <li>6 joueurs : 21 euros par joueur</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading7">
+                            <h5 class="mb-0 text-center text-dark">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                        data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                    Puis-je offrir une session de jeu? <i class="fas fa-gift"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    Bonne idée ! </br>
+                                    Vous avez même plusieurs façons de le faire :
+                                <ul>
+                                    <li>Avec notre carte cadeau, valable pour deux à six personnes.</li>
+                                    <li>Vous pouvez même demander à personnaliser l’épreuve en cachant un mot ou un
+                                        cadeau
+                                        personnalisé dans la pièce.
+                                    </li>
+                                    <li>Avec notre Esc’ape Box, la formule cadeau à emporter : votre session de jeu se
+                                        déroule où vous voulez, quand vous voulez.
+                                    </li>
+                                    <li>Pour tout savoir et pour personnaliser votre cadeau contactez nous par mail ou
+                                        par
+                                        téléphone au 06 58 78 61 73.
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading8">
+                            <h5 class="mb-0 text-center text-dark">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                        data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                    Combien de temps dure une session de jeu? <i class="fas fa-briefcase"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Environ 1h30 au total : quinze minutes pour vous expliquer le concept et vous mettre
+                                    en
+                                    situation, une heure dans la pièce (maximum !) et quinze minutes pour débriefer et
+                                    faire
+                                    le point sur votre expérience de jeu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading9">
+                            <h5 class="mb-0 text-center text-dark">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                        data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                                    Tout le monde peut-il participer? <i class="fas fa-gift"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Presque !</p>
+                                <ul>
+                                    <li>Les enfants : nous accueillons les enfants à partir de 12 ans s’ils sont
+                                        accompagnés
+                                        d’un adulte.
+                                    </li>
+                                    <li>Pour les plus jeunes, n’hésitez pas à contacter notre partenaire Le Beignet Doré
+                                        Parc ! Situé au rez-de chaussée de nos locaux, ce parc de loisirs dédié aux
+                                        enfants
+                                        de 1 à 12 ans accueille vos bambins pour un moment de détente, de rire et de
+                                        défoulement…
+                                    </li>
+                                    <li>Les femmes enceintes : pas de contre-indication (sauf indication particulière à
+                                        la
+                                        réservation), le jeu ne nécessite pas d’exercices physiques ou stressants.
+                                    </li>
+                                    <li>Les personnes à mobilité réduite : malheureusement, nos locaux étant situés au
+                                        premier étage du bâtiment, ils ne sont pas encore adaptés aux fauteuils
+                                        roulants.
+                                        Nous en sommes désolés, et espérons remédier très vite à ce manquement !
+                                    </li>
+                                    <li>Les personnes malvoyantes : certains indices étant purement visuels, il est
+                                        nécessaire qu’au moins un membre de l’équipe ne soit pas malvoyant.
+                                    </li>
+                                    <li>Les personnes malentendantes : certains indices étant purement sonores, il est
+                                        nécessaire qu’au moins un membre de l’équipe ne soit pas malentendant.
+                                    </li>
+                                    <li>N’hésitez pas à nous contacter.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading10">
+                            <h5 class="mb-0 text-center text-dark">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                        data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                    Comment réserver? <i class="fas fa-briefcase"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Jusqu’à la veille de votre session préférée, deux possibilités : utiliser notre
+                                    système
+                                    de réservation en ligne, via la page prévue à cet effet ou bien nous contacter par
+                                    téléphone au 06 58 78 61 73.</br>une session le jour même, réservez uniquement par
+                                    téléphone et toujours au 06 58 78 61 73.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading11">
+                            <h5 class="mb-0 text-center text-dark">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                        data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                                    Peut-on retrouver les mêmes salles dans d'autres régions? <i
+                                            class="fas fa-gift"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    Esc’Ape est indépendant : nos énigmes, nos décors, nos accessoires sont élaborées
+                                    par
+                                    notre team rien que pour vous !
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading12">
+                            <h5 class="mb-0 text-center text-dark">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse"
+                                        data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                    Peut-onjouer entre collègues? <i class="fas fa-briefcase"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Bien sûr, dans nos locaux tout est conçu pour allier team building et réunions
+                                    studieuses. </br> Vous pouvez même jouer sur votre lieu de travail grâce à notre
+                                    Esc’ape
+                                    box ! Toutes les infos sur notre page Entreprise</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endblock content %}
