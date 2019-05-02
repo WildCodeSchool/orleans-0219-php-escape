@@ -442,17 +442,18 @@ footer p a:hover {
     font-family: monospace;
     padding-bottom: 20vh;
     margin-bottom: -20vh;
-    margin-left: 5em;
-    margin-right: 8em;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 9em;
+    z-index: 1;
     display: flex;
     text-align: center;
     flex-flow: row wrap;
     align-items: stretch;
     justify-content: space-between;
     position: relative;
-    padding-top: 9em;
     background-color: rgba(17, 8, 2, 0.7);
-    z-index: 1;
+
 }
 
 #missions .card-deck .card {
@@ -564,7 +565,6 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
     list-style-image: url("/assets/images/feuille.png");
 }
 
-
 /*=====================> Mentions <===========================*/
 
 #mention {
@@ -594,3 +594,33 @@ background-image: url("/assets/images/background-wood-board-parquet.webp")
 }
 
 /*=====================> Mentions <===========================*/
+
+/*=====================> CGVU <===========================*/
+
+#cgvu {
+    color: white;
+    background-color: rgba(32, 16, 4, 0.5);
+    padding-bottom: 20vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 9em;
+    z-index: 1;
+}
+
+#cgvu h1, h2 {
+    font-family: monospace;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#cgvu h1 {
+    text-decoration: underline;
+}
+
+#cgvu h2 {
+    font-size: 1.9em;
+}
+
+/*=====================> CGVU <===========================*/
+
