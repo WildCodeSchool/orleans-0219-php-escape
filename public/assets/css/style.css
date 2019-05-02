@@ -414,11 +414,6 @@ footer p a:hover {
     filter: grayscale(0);
 }
 
-.space {
-    margin-top: 13em;
-    margin-bottom: 6em;
-}
-
 /*===================> Page Mission <====================*/
 
 .checked {
@@ -446,7 +441,7 @@ footer p a:hover {
     margin-right: 7em;
     position: relative;
     padding-top: 9em;
-    background-color: rgba(17, 8, 2, 0.7);
+    background-color: rgba(17, 8, 2, 0.6);
     z-index: 1;
     display: flex;
     text-align: center;
@@ -518,6 +513,7 @@ footer p a:hover {
 #missions .card-text {
     font-size: 12pt;
 }
+/*===================> Page Mission <====================*/
 
 /* PAGE PRICE */
 
@@ -578,7 +574,7 @@ footer p a:hover {
     height: 250px;
 }
 
-#price td, th, #price .join {
+#price td, #price th, #price .join {
     color: black;
 }
 #price .height {
@@ -606,3 +602,347 @@ footer p a:hover {
 }
 
 /* PAGE PRICE */
+
+/*=========================> PAGE FAQ <==========================*/
+
+#faq {
+    font-family: monospace;
+    padding-bottom: 25vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 10em;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgba(17, 8, 2, 0.6);
+}
+
+
+#faq #accordion {
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+#faq h1 {
+    font-variant: small-caps;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+}
+
+#faq button {
+    font-variant: small-caps;
+}
+
+/*=========================> PAGE FAQ <==========================*/
+
+/*=========================> ADMIN <==========================*/
+
+#editadmin label, #addadmin label {
+    color: white;
+}
+#editadmin form, #addadmin form {
+    max-width: 600px;
+}
+#editadmin, #addadmin {
+    font-family: "courier new";
+}
+#editadmin img, #addadmin img {
+    max-width: 300px;
+}
+
+/*=========================> ADMIN <==========================*/
+
+/*===================> Page Contact <====================*/
+
+/*-----------------> FORMULAIRE <----------------*/
+
+#contactUs {
+    font-family: monospace;
+    padding-bottom: 25vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 10em;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgba(17, 8, 2, 0.6);
+}
+
+#contactUs h1 {
+    color: white;
+    font-size: 4em;
+    margin-bottom: 1em;
+    font-variant: small-caps;
+}
+
+#contactUs .contactForm {
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+#contactUs .form-row {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#contactUs label{
+    font-variant: small-caps;
+    color: grey;
+    font-size: 1.3em;
+}
+
+#contactUs a {
+    color: darkgoldenrod;
+    transition: ease 0.2s;
+}
+
+#contactUs a:hover {
+    color: #e9b122;
+    text-decoration: none;
+    text-shadow: 0 1px 5px rgba(255, 255, 255, 0.5);
+}
+
+/*-----------------> FORMULAIRE <----------------*/
+
+/*-------------------> ADRESSE <-----------------*/
+
+
+#contactUs #adress h2 {
+    font-variant: small-caps;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+#contactUs #adress {
+    margin-left: 7em;
+    margin-right: 7em;
+    width: 100%;
+}
+
+#contactUs #adress .row {
+    height: 20vw;
+}
+
+#contactUs #adress iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 3px 37px 21px rgba(214,201,214,0.24);
+    border: none;
+}
+
+#contactUs #adress .adresse {
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#contactUs #adress h3, #contactUs #adress span {
+    color: darkgoldenrod;
+}
+
+/*-------------------> ADRESSE <-----------------*/
+
+/*===================> Page Contact <====================*/
+
+/*====================> PageMissionIndi <=======================*/
+
+#missionPage {
+    text-align: center;
+    font-family: monospace;
+    color: white;
+    background-color: rgba(17, 8, 2, 0.6);
+    padding-bottom: 17vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 7em;
+    z-index: 1;
+}
+
+#missionPage .fas {
+    color: black;
+}
+
+#missionPage .title, .description {
+    margin: 4em;
+}
+
+#missionPage h1 {
+    font-variant: small-caps;
+    margin-bottom: 0.5em;
+    font-size: 5vw;
+}
+
+#missionPage h2 {
+    font-variant: small-caps;
+    font-size: 2.5vw;
+}
+
+#missionPage h5 {
+    color: black;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+
+#missionPage h3 {
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+#missionPage .description p {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+#missionPage .card-img-overlay:hover h5 {
+    color: white;
+}
+
+#missionPage .card-img-overlay:hover .fas {
+    color: transparent;
+}
+
+#missionPage .btn-warning {
+    margin: 1.5em;
+    padding: 0;
+    font-size: 1.5em;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+#missionPage .btnHide {
+    display: none;
+    padding: 0.5em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#missionPage .btn1 {
+    margin-top: 2em;
+    padding: 0.5em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.mission .card-img {
+    height: 30em;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.mission .card-img-overlay {
+    color: black;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.5);
+    vertical-align: middle;
+    display: grid;
+}
+
+.mission .card-img-overlay:hover {
+    background-color: transparent;
+}
+
+.mission .card-img-overlay:hover p {
+    color: transparent;
+}
+
+.mission .card-img-overlay:hover .checked {
+    display: none;
+}
+
+@media screen and (max-width: 490px) {
+    #missionPage {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #missionPage .description{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    #missionPage .description p {
+        text-align: left;
+    }
+}
+
+/*====================> PageMissionIndi <=======================*/
+
+/*=====================> Mentions <===========================*/
+
+#mention {
+    color: white;
+    background-color: rgba(32, 16, 4, 0.5);
+    padding-bottom: 20vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 9em;
+    z-index: 1;
+}
+
+#mention h1, h2 {
+    font-family: monospace;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#mention h1 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#mention h2 {
+    font-size: 1.9em;
+}
+
+/*=====================> Mentions <===========================*/
+
+/*=====================> CGVU <===========================*/
+
+#cgvu {
+    color: white;
+    background-color: rgba(32, 16, 4, 0.5);
+    padding-bottom: 20vh;
+    margin-bottom: -20vh;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 9em;
+    z-index: 1;
+}
+
+#cgvu h1, h2 {
+    font-family: monospace;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#cgvu h1 {
+    text-decoration: underline;
+}
+
+#cgvu h2 {
+    font-size: 1.9em;
+}
+
+/*=====================> CGVU <===========================*/
